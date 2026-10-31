@@ -435,56 +435,6 @@
     "a": "Hiến chương ASEAN."
   },
   {
-    "q": "Tuyên bố lịch sử về việc thành lập Cộng đồng ASEAN được các Lãnh đạo ASEAN ký tại Ku-a-la Lăm-pơ vào thời gian nào?",
-    "options": [
-      "Ngày 31-12-2010.",
-      "Ngày 28-07-1995.",
-      "Ngày 22-11-2015.",
-      "Ngày 08-08-2015."
-    ],
-    "a": "Ngày 08-08-2015."
-  },
-  {
-    "q": "Năm 2020, tại Hội nghị Cấp cao ASEAN lần thứ 37 họp ở Hà Nội (Việt Nam), ASEAN đã triển khai nhiệm vụ quan trọng nào?",
-    "options": [
-      "Kết nạp thành viên mới ngoài châu Á.",
-      "Thành lập thêm trụ cột thứ tư.",
-      "Bãi bỏ Hiến chương ASEAN.",
-      "Soạn thảo Tầm nhìn Cộng đồng ASEAN sau năm 2025."
-    ],
-    "a": "Soạn thảo Tầm nhìn Cộng đồng ASEAN sau năm 2025."
-  },
-  {
-    "q": "Một trong những thách thức về mặt chính trị - an ninh nội khối đối với Cộng đồng ASEAN hiện nay là?",
-    "options": [
-      "Sự đồng nhất hoàn toàn về kinh tế.",
-      "Sự thiếu hụt tài nguyên thiên nhiên.",
-      "Sự đa dạng về chế độ chính trị và tình hình phức tạp ở một số nước.",
-      "Tỷ lệ suy dinh dưỡng quá cao."
-    ],
-    "a": "Sự đa dạng về chế độ chính trị và tình hình phức tạp ở một số nước."
-  },
-  {
-    "q": "Thách thức an ninh phi truyền thống gay gắt mà Cộng đồng ASEAN đang phải phối hợp ứng phó là?",
-    "options": [
-      "Nạn thiếu nguồn lao động trẻ.",
-      "Biến đổi khí hậu, ô nhiễm môi trường và dịch bệnh.",
-      "Sự suy giảm phát triển công nghệ thông tin.",
-      "Cạnh tranh vũ khí hạt nhân giữa các nước thành viên."
-    ],
-    "a": "Biến đổi khí hậu, ô nhiễm môi trường và dịch bệnh."
-  },
-  {
-    "q": "Triển vọng phát triển của Cộng đồng ASEAN được khẳng định thông qua?",
-    "options": [
-      "Vị thế quốc tế ngày càng nâng cao và đóng vai trò trung tâm trong cấu trúc khu vực.",
-      "Rút lui khỏi các diễn đàn quốc tế lớn.",
-      "Ngừng mở rộng hợp tác với các bên đối tác.",
-      "Chuyển thành một quốc gia duy nhất."
-    ],
-    "a": "Vị thế quốc tế ngày càng nâng cao và đóng vai trò trung tâm trong cấu trúc khu vực."
-  },
-  {
     "q": "Một trong những mục đích cơ bản nhất khi thành lập ASEAN (1967) là?",
     "options": [
       "Xây dựng đồng tiền chung khu vực.",
@@ -563,5 +513,55 @@
       "Tuyên bố Băng Cốc."
     ],
     "a": "Hiến chương ASEAN."
+  },
+  {
+    "q": "Tuyên bố lịch sử về việc thành lập Cộng đồng ASEAN được các Lãnh đạo ASEAN ký tại Ku-a-la Lăm-pơ vào thời gian nào?",
+    "options": [
+      "Ngày 31-12-2010.",
+      "Ngày 28-07-1995.",
+      "Ngày 22-11-2015.",
+      "Ngày 08-08-2015."
+    ],
+    "a": "Ngày 22-11-2015."
+  },
+  {
+    "q": "Năm 2020, tại Hội nghị Cấp cao ASEAN lần thứ 37 họp ở Hà Nội (Việt Nam), ASEAN đã triển khai nhiệm vụ quan trọng nào?",
+    "options": [
+      "Kết nạp thành viên mới ngoài châu Á.",
+      "Thành lập thêm trụ cột thứ tư.",
+      "Bãi bỏ Hiến chương ASEAN.",
+      "Soạn thảo Tầm nhìn Cộng đồng ASEAN sau năm 2025."
+    ],
+    "a": "Soạn thảo Tầm nhìn Cộng đồng ASEAN sau năm 2025."
+  },
+  {
+    "q": "Một trong những thách thức về mặt chính trị - an ninh nội khối đối với Cộng đồng ASEAN hiện nay là?",
+    "options": [
+      "Sự đồng nhất hoàn toàn về kinh tế.",
+      "Sự thiếu hụt tài nguyên thiên nhiên.",
+      "Sự đa dạng về chế độ chính trị và tình hình phức tạp ở một số nước.",
+      "Tỷ lệ suy dinh dưỡng quá cao."
+    ],
+    "a": "Sự đa dạng về chế độ chính trị và tình hình phức tạp ở một số nước."
+  },
+  {
+    "q": "Thách thức an ninh phi truyền thống gay gắt mà Cộng đồng ASEAN đang phải phối hợp ứng phó là?",
+    "options": [
+      "Nạn thiếu nguồn lao động trẻ.",
+      "Biến đổi khí hậu, ô nhiễm môi trường và dịch bệnh.",
+      "Sự suy giảm phát triển công nghệ thông tin.",
+      "Cạnh tranh vũ khí hạt nhân giữa các nước thành viên."
+    ],
+    "a": "Biến đổi khí hậu, ô nhiễm môi trường và dịch bệnh."
+  },
+  {
+    "q": "Triển vọng phát triển của Cộng đồng ASEAN được khẳng định thông qua?",
+    "options": [
+      "Vị thế quốc tế ngày càng nâng cao và đóng vai trò trung tâm trong cấu trúc khu vực.",
+      "Rút lui khỏi các diễn đàn quốc tế lớn.",
+      "Ngừng mở rộng hợp tác với các bên đối tác.",
+      "Chuyển thành một quốc gia duy nhất."
+    ],
+    "a": "Vị thế quốc tế ngày càng nâng cao và đóng vai trò trung tâm trong cấu trúc khu vực."
   }
 ]

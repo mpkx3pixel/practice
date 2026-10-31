@@ -88,7 +88,7 @@
     "items": [
       {
         "t": "a. Đoạn tư liệu có nội dung nói về ý tưởng, mục tiêu và kế hoạch xây dựng Cộng đồng ASEAN.",
-        "a": true
+        "a": false
       },
       {
         "t": "b. Văn bản Lộ trình xây dựng Cộng đồng ASEAN (2009 – 2015) là văn bản đầu tiên đề xuất ý tưởng, xây dựng kế hoạch để tiến tới xây dựng thành lập Cộng đồng ASEAN.",
@@ -100,7 +100,7 @@
       },
       {
         "t": "d. Sau sáu năm thực hiện, chủ yếu thông qua các kế hoạch đối với các nước thành viên, năm 2015, Cộng đồng ASEAN đã chính thức được thành lập.",
-        "a": true
+        "a": false
       }
     ]
   }

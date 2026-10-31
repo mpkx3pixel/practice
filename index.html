@@ -23,6 +23,7 @@
       <button class="back-btn" id="back-btn" type="button">← Quay lại menu chính</button>
       <h2 class="ex-title" id="ex-title"></h2>
       <p class="ex-meta" id="ex-meta"></p>
+      <p class="ex-note" id="ex-note" hidden></p>
       <h1 class="mode-heading">Chọn chế độ học</h1>
       <div class="options" id="options"></div>
     </section>
@@ -190,6 +191,13 @@
 
       buildModeOptions(ex);
       showOnly('mode-view');
+      const noteEl = document.getElementById('ex-note');
+      if (ex.note) {
+        noteEl.textContent = `Lưu ý: ${ex.note}`;
+        noteEl.hidden = false;
+      } else {
+        noteEl.hidden = true;
+      }
 
       if (mode === 'outline') {
         document.getElementById('outline-ex-title').textContent = ex.title;
