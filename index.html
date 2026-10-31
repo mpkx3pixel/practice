@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ôn tập</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <section id="home-view">
+      <header id="home-header">
+        <h1>Ôn tập</h1>
+        <p id="summary"></p>
+      </header>
+      <main class="grid" id="grid"></main>
+      <div class="empty" id="empty" hidden>
+        Chưa có đề ôn tập nào.
+      </div>
+    </section>
+
+    <section id="mode-view" hidden>
+      <button class="back-btn" id="back-btn" type="button">← Quay lại menu chính</button>
+      <h2 class="ex-title" id="ex-title"></h2>
+      <p class="ex-meta" id="ex-meta"></p>
+      <h1 class="mode-heading">Chọn chế độ học</h1>
+      <div class="options" id="options"></div>
+    </section>
+
+    <section id="outline-view" hidden>
+      <button class="back-btn" id="outline-back-btn" type="button">← Quay lại chọn chế độ</button>
+      <h2 class="ex-title" id="outline-ex-title"></h2>
+      <p class="ex-meta" id="outline-ex-meta"></p>
+      <h1 class="mode-heading">Đề cương</h1>
+      <div class="outline" id="outline-content"></div>
+    </section>
+
+    <section id="practice-view" hidden>
+      <button class="back-btn" id="practice-back-btn" type="button">← Quay lại chọn chế độ</button>
+      <h2 class="ex-title" id="practice-ex-title"></h2>
+      <p class="ex-meta" id="practice-ex-meta"></p>
+      <h1 class="mode-heading">Ôn tập</h1>
+      <div id="practice-content"></div>
+    </section>
+
+    <section id="test-view" hidden>
+      <button class="back-btn" id="test-back-btn" type="button">← Quay lại chọn chế độ</button>
+      <h2 class="ex-title" id="test-ex-title"></h2>
+      <p class="ex-meta" id="test-ex-meta"></p>
+      <h1 class="mode-heading">Kiểm tra thử</h1>
+      <div id="test-content"></div>
+    </section>
+
+    <footer class="footer">Made by x3pixel</footer>
+  </div>
+
+  <script src="outline.js"></script>
+  <script src="practice.js"></script>
+  <script src="test.js"></script>
+  <script>
+    const MODES = [
+      {
+        id: 'outline',
+        icon: '📖',
+        name: 'Xem đề cương',
+        desc: 'Hiển thị toàn bộ câu hỏi kèm đáp án của đề cương để bạn đọc và ghi nhớ lý thuyết.',
+      },
+      {
+        id: 'practice',
+        icon: '✏️',
+        name: 'Ôn tập',
+        desc: 'Luyện tập lần lượt từng câu hỏi và biết kết quả ngay sau mỗi câu trả lời.',
+      },
+      {
+        id: 'test',
+        icon: '📝',
+        name: 'Kiểm tra thử',
+        desc: 'Làm toàn bộ đề cương trong một lượt để xem số điểm hiện tại của bạn.',
+      },
+    ];
+
+    /** Route qua location.hash: '' | '#<exId>' | '#<exId>/<mode>' */
+    let exercises = [];
+
+    async function loadExercises() {
+      try {
+        const res = await fetch('exercises/index.json');
+        if (!res.ok) throw new Error(res.statusText);
+        const data = await res.json();
+        exercises = data.exercises || [];
+        document.getElementById('summary').textContent =
+          `${data.total_exercises ?? exercises.length} đề`;
+
+        if (exercises.length === 0) {
+          document.getElementById('empty').hidden = false;
+        } else {
+          renderCards();
+        }
+      } catch (err) {
+        document.getElementById('empty').hidden = false;
+        document.getElementById('empty').textContent = 'Không thể tải danh sách bài tập.';
+        console.error(err);
+      }
+      route();
+    }
+
+    function renderCards() {
+      const grid = document.getElementById('grid');
+
+      for (const ex of exercises) {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = 'card';
+        card.addEventListener('click', () => setHash(`#${ex.id}`));
+
+        const title = document.createElement('div');
+        title.className = 'card-title';
+        title.textContent = ex.title;
+
+        const desc = document.createElement('div');
+        desc.className = 'card-desc';
+        desc.textContent = ex.short_description || '';
+
+        const meta = document.createElement('div');
+        meta.className = 'card-meta';
+        meta.innerHTML = `
+          <span>📄 ${ex.sections?.length ?? 0} phần</span>
+          <span>❓ ${ex.total_questions ?? 0} câu</span>
+        `;
+
+        card.append(title, desc, meta);
+        grid.appendChild(card);
+      }
+    }
+
+    function setHash(hash) {
+      if (location.hash === hash) {
+        route();
+      } else {
+        location.hash = hash;
+      }
+    }
+
+    function showOnly(viewID) {
+      for (const id of ['home-view', 'mode-view', 'outline-view', 'practice-view', 'test-view']) {
+        document.getElementById(id).hidden = id !== viewID;
+      }
+    }
+
+    function buildModeOptions(ex) {
+      document.getElementById('ex-title').textContent = ex.title;
+      document.getElementById('ex-meta').textContent =
+        `${ex.sections?.length ?? 0} phần · ${ex.total_questions ?? 0} câu hỏi`;
+
+      const options = document.getElementById('options');
+      options.innerHTML = '';
+
+      for (const mode of MODES) {
+        const option = document.createElement('button');
+        option.type = 'button';
+        option.className = 'option';
+        option.innerHTML = `
+          <span class="option-icon">${mode.icon}</span>
+          <span class="option-info">
+            <span class="option-name">${mode.name}</span>
+            <span class="option-desc">${mode.desc}</span>
+          </span>
+          <span class="option-arrow">→</span>
+        `;
+        if (mode.id === 'outline' || mode.id === 'practice' || mode.id === 'test') {
+          option.addEventListener('click', () => setHash(`#${ex.id}/${mode.id}`));
+        }
+        options.appendChild(option);
+      }
+    }
+
+    async function route() {
+      const [exID, mode] = decodeURIComponent(location.hash.slice(1)).split('/');
+
+      if (!exID) {
+        showOnly('home-view');
+        return;
+      }
+
+      const ex = exercises.find((item) => item.id === exID);
+      if (!ex) {
+        showOnly('home-view');
+        return;
+      }
+
+      buildModeOptions(ex);
+      showOnly('mode-view');
+
+      if (mode === 'outline') {
+        document.getElementById('outline-ex-title').textContent = ex.title;
+        document.getElementById('outline-ex-meta').textContent =
+          `${ex.sections?.length ?? 0} phần · ${ex.total_questions ?? 0} câu hỏi`;
+        document.getElementById('outline-back-btn').dataset.exId = ex.id;
+        showOnly('outline-view');
+        await Outline.render(document.getElementById('outline-content'), ex);
+      }
+
+      if (mode === 'practice') {
+        document.getElementById('practice-ex-title').textContent = ex.title;
+        document.getElementById('practice-ex-meta').textContent =
+          `${ex.sections?.length ?? 0} phần · ${ex.total_questions ?? 0} câu hỏi`;
+        document.getElementById('practice-back-btn').dataset.exId = ex.id;
+        showOnly('practice-view');
+        await Practice.render(document.getElementById('practice-content'), ex);
+      }
+
+      if (mode === 'test') {
+        document.getElementById('test-ex-title').textContent = ex.title;
+        document.getElementById('test-ex-meta').textContent =
+          `${ex.sections?.length ?? 0} phần · ${ex.total_questions ?? 0} câu hỏi`;
+        document.getElementById('test-back-btn').dataset.exId = ex.id;
+        showOnly('test-view');
+        await Test.render(document.getElementById('test-content'), ex);
+      }
+    }
+
+    document.getElementById('back-btn').addEventListener('click', () => setHash(''));
+    document.getElementById('outline-back-btn').addEventListener('click', (event) => {
+      setHash(`#${event.currentTarget.dataset.exId}`);
+    });
+    document.getElementById('practice-back-btn').addEventListener('click', (event) => {
+      setHash(`#${event.currentTarget.dataset.exId}`);
+    });
+    document.getElementById('test-back-btn').addEventListener('click', (event) => {
+      setHash(`#${event.currentTarget.dataset.exId}`);
+    });
+    window.addEventListener('hashchange', route);
+
+    loadExercises();
+  </script>
+</body>
+</html>

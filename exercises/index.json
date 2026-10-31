@@ -1,0 +1,23 @@
+{
+  "total_exercises": 1,
+  "exercises": [
+    {
+      "id": "001",
+      "title": "Ôn tập giữa kì I môn lịch sử 12",
+      "short_description": "đề cương ôn tập",
+      "total_questions": 65,
+      "sections": [
+        {
+          "title": "Phần 1: Trắc nghiệm nhiều lựa chọn",
+          "number_of_questions": 60,
+          "file_path": "exercises/001/section-1.json"
+        },
+        {
+          "title": "Phần 2: Trắc nghiệm đúng sai",
+          "number_of_questions": 5,
+          "file_path": "exercises/001/section-2.json"
+        }
+      ]
+    }
+  ]
+}
