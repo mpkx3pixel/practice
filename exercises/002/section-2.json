@@ -1,0 +1,89 @@
+[
+  {
+    "title": "Câu 1. Cho hình vẽ bên là sơ đồ máy phát điện ba pha",
+    "img": "exercises/002/images/q1.png",
+    "items": [
+      {
+        "t": "a. Cấu tạo máy phát điện ba pha gồm phần tĩnh (stator) và phần quay (rotor).",
+        "a": true
+      },
+      {
+        "t": "b. Phần quay (rotor) đặt 3 cuộn dây AX, BY, CZ có cùng số vòng và kích thước dây, lệch nhau góc 120°.",
+        "a": false
+      },
+      {
+        "t": "c. Phần quay (rotot) là một nam châm điện, khi quay sẽ tạo ra từ thông biến thiên.",
+        "a": false
+      },
+      {
+        "t": "d. khi nam châm quay với tốc độ góc không đổi, trong cuộn dây mỗi pha xuất hiện dòng điện xoay chiều một pha (hai đầu cuộn dây mỗi pha hở mạch).",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 2. Các nhà máy sản xuất điện năng: thủy điện, nhiệt điện, điện hạt nhân, điện gió, điện mặt trời.",
+    "items": [
+      {
+        "t": "a. Trong đó thủy điện, điện gió, điện mặt trời không phát thải khí nhà kính.",
+        "a": true
+      },
+      {
+        "t": "b. Nhà máy điện hạt nhân có công suất phát điện không lớn, không phụ thuộc vào tự nhiên và môi trường.",
+        "a": false
+      },
+      {
+        "t": "c. Nhà máy điện nhiệt điện có công suất phát điện lớn, không phụ thuộc vào điều kiện thời tiết.",
+        "a": true
+      },
+      {
+        "t": "d. Các nhà máy thủy điện, nhiệt điện, điện hạt nhân, điện gió đều chuyển đổi năng lượng làm quay turbine của máy phát tạo ra điện.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 3. Cho sơ đồ hệ thống điện như hình bên gồm nguồn điện, lưới điện và tải tiêu thụ:",
+    "img": "exercises/002/images/q3.png",
+    "items": [
+      {
+        "t": "a. Lưới điện truyền tải có 2 cấp điện áp 110 kV và 220 kV, lưới điện phân phối có 2 cấp điện áp là 22 kV và 0,4 kV.",
+        "a": false
+      },
+      {
+        "t": "b. Hệ thống điện gồm hai nhà máy điện là P1 và P2.",
+        "a": true
+      },
+      {
+        "t": "c. Hệ thống điện có hai trạm biến áp tăng áp và ba trạm biến áp giảm áp.",
+        "a": true
+      },
+      {
+        "t": "d. Các đường dây truyền tải và phân phối có 4 cấp điện áp: 220 kV, 110 kV, 22 kV, 0,4 kV.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 4. Cho mạch điện ba pha đối xứng có sơ đồ như hình bên. Nguồn điện ba pha bốn dây có điện áp 380/220V. Tải 1 là một lò điện trở 3 pha, điện trở mỗi pha là R. Tải 2 là một động cơ không đồng bộ 3 pha, tổng trở mỗi pha là Z.",
+    "img": "exercises/002/images/q4.png",
+    "items": [
+      {
+        "t": "a. 220V là điện áp dây, 380V là điện áp pha.",
+        "a": false
+      },
+      {
+        "t": "b. Tải 1 nối hình sao có dây trung tính, tải 2 nối hình tam giác.",
+        "a": true
+      },
+      {
+        "t": "c. Nếu giá trị R của tải 1 là 30 Ω thì cường độ dòng điện trên mỗi pha của tải 1 là 12,7 A.",
+        "a": false
+      },
+      {
+        "t": "d. Để lắp thêm 3 bóng đèn loại 100W – 220V vào mạch điện trên thì 3 bóng đèn này thực hiện cách nối giống tài 1.",
+        "a": true
+      }
+    ]
+  }
+]

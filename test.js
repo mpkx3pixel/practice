@@ -184,6 +184,8 @@ const Test = {
     qtext.textContent = q.q;
     buffer.appendChild(qtext);
 
+    appendQuestionImage(buffer, q);
+
     const opts = el('div', 'practice-opts');
     q.options.forEach((text, li) => {
       const opt = el('button', 'practice-opt');
@@ -216,6 +218,8 @@ const Test = {
     const passage = el('p', 'practice-passage');
     passage.textContent = stripNumbering(q.title);
     buffer.appendChild(passage);
+
+    appendQuestionImage(buffer, q);
 
     q.items.forEach((it, yi) => {
       const row = el('div', 'tf-row');
@@ -251,6 +255,8 @@ const Test = {
     const qtext = el('p', 'practice-qtext');
     qtext.textContent = q.q;
     buffer.appendChild(qtext);
+
+    appendQuestionImage(buffer, q);
 
     const form = el('div', 'practice-form');
     const field = type === 'essay' ? el('textarea', 'practice-input') : el('input', 'practice-input');
@@ -466,6 +472,8 @@ const Test = {
       qt.textContent = q.item.q;
       card.appendChild(qt);
 
+      appendQuestionImage(card, q.item);
+
       const answerIndex = q.item.options.indexOf(q.item.a);
       q.item.options.forEach((text, li) => {
         const row = el('div', 'option-row');
@@ -486,6 +494,8 @@ const Test = {
       const passage = el('p', 'q-passage');
       passage.textContent = stripNumbering(q.item.title);
       card.appendChild(passage);
+
+      appendQuestionImage(card, q.item);
 
       q.item.items.forEach((it, yi) => {
         const user = s.answers[i]?.choices?.[yi] ?? null;
@@ -514,6 +524,8 @@ const Test = {
     const qt = el('p', 'q-text');
     qt.textContent = q.item.q;
     card.appendChild(qt);
+
+    appendQuestionImage(card, q.item);
 
     const ua = el('p', 'res-user');
     const userValue = String(s.answers[i]?.value ?? '').trim();

@@ -1,0 +1,612 @@
+[
+  {
+    "q": "Kĩ thuật điện là ngành kĩ thuật liên quan đến việc:",
+    "options": [
+      "Nghiên cứu và chế tạo các loại dây dẫn phù hợp với từng vùng miền.",
+      "Nghiên cứu và ứng dụng công nghệ điện, điện từ,…vào sản xuất, truyền tải, phân phối và sử dụng điện năng.",
+      "Thiết kế các mạng điện tối ưu, phù hợp với thời tiết khắc nghiệt.",
+      "Nghiên cứu và ứng dụng công nghệ điện, điện từ,…vào sản xuất, truyền tải và sử dụng điện năng."
+    ],
+    "a": "Nghiên cứu và ứng dụng công nghệ điện, điện từ,…vào sản xuất, truyền tải, phân phối và sử dụng điện năng."
+  },
+  {
+    "q": "Sản xuất điện là gì?",
+    "options": [
+      "Tạo ra điện từ việc chuyển đổi các dạng năng lượng khác nhau thành năng lượng điện.",
+      "Đưa điện từ nguồn (nhà máy điện) tới nơi tiêu thụ thông qua lưới điện.",
+      "Nghiên cứu, thiết kế, chế tạo, sử dụng các thiết bị điện và các bộ điều khiển để biến đổi điện năng thành các dạng năng lượng khác phục vụ sản xuất và đời sống.",
+      "Nghiên cứu, chế tạo các loại vật liệu composite thích hợp để làm dây dẫn điện."
+    ],
+    "a": "Tạo ra điện từ việc chuyển đổi các dạng năng lượng khác nhau thành năng lượng điện."
+  },
+  {
+    "q": "Truyền tải và phân phối điện là:",
+    "options": [
+      "Hạn chế xảy ra các phản ứng hóa học trong quá trình sử dụng điện.",
+      "Tạo ra điện từ việc chuyển đổi các dạng năng lượng khác thành năng lượng điện",
+      "Sử dụng các thiết bị và các bộ điều khiển để biến đổi điện năng thành các dạng năng lượng khác phục vụ cho sản xuất và đời sống.",
+      "Đưa điện từ nguồn (nhà máy điện) tới nơi tiêu thụ thông qua lưới điện."
+    ],
+    "a": "Đưa điện từ nguồn (nhà máy điện) tới nơi tiêu thụ thông qua lưới điện."
+  },
+  {
+    "q": "Vai trò của kĩ thuật điện trong sản xuất và đời sống là:",
+    "options": [
+      "Làm đòn bẩy giúp các ngành khoa học, công nghệ khác phát triển.",
+      "Phát triển khả năng thiết kế và vận hành mạch điện của các kĩ sư điện.",
+      "Nghiên cứu, thiết kế, chế tạo, sử dụng các thiết bị điện và các bộ điều khiển để biến đổi điện năng thành các dạng năng lượng khác phục vụ sản xuất và đời sống.",
+      "thúc đẩy phát triển nông nghiệp và dịch vụ."
+    ],
+    "a": "Làm đòn bẩy giúp các ngành khoa học, công nghệ khác phát triển."
+  },
+  {
+    "q": "Đâu không phải là vị trí, vai trò của điện năng trong sản xuất?",
+    "options": [
+      "Cung cấp điện năng cho sản xuất.",
+      "Cung cấp thiết bị điện cho sản xuất.",
+      "Điều khiển tự động hóa cho quá trình sản xuất.",
+      "Giúp nâng cao chất lượng cộng đồng."
+    ],
+    "a": "Giúp nâng cao chất lượng cộng đồng."
+  },
+  {
+    "q": "Phát triển sản xuất điện năng từ nguồn năng lượng tái tạo nhằm:",
+    "options": [
+      "Giảm sự phụ thuộc vào nhiên liệu hóa thạch và giảm phát thải khí nhà kính trong lĩnh vực sản xuất điện.",
+      "Quản trị tối ưu việc truyền dẫn, phân phối, sử dụng điện năng.",
+      "Tiết kiệm năng lượng hơn và thân thiện với môi trường.",
+      "Tăng khả năng quản lí, giám sát sản xuất, giúp tăng năng xuất, giảm chi phí."
+    ],
+    "a": "Giảm sự phụ thuộc vào nhiên liệu hóa thạch và giảm phát thải khí nhà kính trong lĩnh vực sản xuất điện."
+  },
+  {
+    "q": "Đâu là ngành nghề trong lĩnh vực thiết kế điện?",
+    "options": [
+      "Là việc nghiên cứu, ứng dụng các kiến thức về kĩ thuật điện và các phương pháp tính toán để phân tích, thiết kế, lựa chọn vật liệu, thiết bị điện cho các hệ thống điện, thiết bị điện đảm bảo các yêu cầu kinh tế – kĩ thuật, công năng sử dụng và tính thẩm mĩ.",
+      "Là việc sử dụng các dây chuyền công nghệ, hoặc máy móc và các công cụ hỗ trợ để tạo ra các thiết bị điện thành phẩm từ vật liệu, linh kiện ban đầu theo quy trình kiểm soát chất lượng.",
+      "Là việc thi công, lắp đặt, kết nối đường dây điện và thiết bị điện cho các hệ thống điện, công trình điện theo hồ sơ thiết kế, các quy chuẩn kĩ thuật và an toàn điện.",
+      "Là các hoạt động nhằm duy trì chế độ làm việc bình thường của hệ thống điện đáp ứng các yêu cầu chất lượng, độ tin cậy và kinh tế."
+    ],
+    "a": "Là việc nghiên cứu, ứng dụng các kiến thức về kĩ thuật điện và các phương pháp tính toán để phân tích, thiết kế, lựa chọn vật liệu, thiết bị điện cho các hệ thống điện, thiết bị điện đảm bảo các yêu cầu kinh tế – kĩ thuật, công năng sử dụng và tính thẩm mĩ."
+  },
+  {
+    "q": "Đâu là ngành nghề trong lĩnh vực lắp đặt điện?",
+    "options": [
+      "Là hoạt động thường kì nhằm duy trì hệ thống điện, thiết bị điện hoạt động bình thường, tránh hỏng hóc.",
+      "Là việc sử dụng các dây chuyền công nghệ, hoặc máy móc và các công cụ hỗ trợ để tạo ra các thiết bị điện thành phẩm từ vật liệu, linh kiện ban đầu theo quy trình kiểm soát chất lượng.",
+      "Là việc thi công, lắp đặt, kết nối đường dây điện và thiết bị điện cho các hệ thống điện, công trình điện theo hồ sơ thiết kế, các quy chuẩn kĩ thuật và an toàn điện.",
+      "Là các hoạt động nhằm duy trì chế độ làm việc bình thường của hệ thống điện đáp ứng các yêu cầu chất lượng, độ tin cậy và kinh tế."
+    ],
+    "a": "Là việc thi công, lắp đặt, kết nối đường dây điện và thiết bị điện cho các hệ thống điện, công trình điện theo hồ sơ thiết kế, các quy chuẩn kĩ thuật và an toàn điện."
+  },
+  {
+    "q": "Đâu là ngành nghề trong lĩnh vực sản xuất, chế tạo thiết bị điện?",
+    "options": [
+      "Là hoạt động thường kì nhằm duy trì hệ thống điện, thiết bị điện hoạt động bình thường, tránh hỏng hóc.",
+      "Là việc sử dụng các dây chuyền công nghệ, hoặc máy móc và các công cụ hỗ trợ để tạo ra các thiết bị điện thành phẩm từ vật liệu, linh kiện ban đầu theo quy trình kiểm soát chất lượng.",
+      "Là việc thi công, lắp đặt, kết nối đường dây điện và thiết bị điện cho các hệ thống điện, công trình điện theo hồ sơ thiết kế, các quy chuẩn kĩ thuật và an toàn điện.",
+      "Là các hoạt động nhằm duy trì chế độ làm việc bình thường của hệ thống điện đáp ứng các yêu cầu chất lượng, độ tin cậy và kinh tế."
+    ],
+    "a": "Là việc sử dụng các dây chuyền công nghệ, hoặc máy móc và các công cụ hỗ trợ để tạo ra các thiết bị điện thành phẩm từ vật liệu, linh kiện ban đầu theo quy trình kiểm soát chất lượng."
+  },
+  {
+    "q": "Có trình độ trung cấp hoặc cao đẳng nghề kĩ thuật điện đối với ngành sản xuất, chế tạo thiết bị điện.",
+    "options": [
+      "Kĩ thuật viên.",
+      "Thợ điện.",
+      "Kĩ sư điện.",
+      "Kĩ thuật viên, thợ điện."
+    ],
+    "a": "Thợ điện."
+  },
+  {
+    "q": "Có trình độ trung cấp hoặc cao đẳng nghề kĩ thuật điện đối với ngành lắp đặt điện.",
+    "options": [
+      "Kĩ thuật viên.",
+      "Thợ điện.",
+      "Kĩ sư điện.",
+      "Kĩ thuật viên, thợ điện."
+    ],
+    "a": "Kĩ thuật viên, thợ điện."
+  },
+  {
+    "q": "Có trình độ sơ cấp điện đối với ngành bảo dưỡng và sửa chữa điện.",
+    "options": [
+      "Kĩ thuật viên.",
+      "Thợ điện.",
+      "Kĩ sư điện.",
+      "Kĩ thuật viên, thợ điện."
+    ],
+    "a": "Thợ điện."
+  },
+  {
+    "q": "Hệ thống gồm ba dòng điện xoay chiều một pha cùng tần số, cùng biên độ và có góc lệch pha nhau 2π/3 hay 120° gọi là:",
+    "options": [
+      "Máy biến áp ba pha.",
+      "Máy phát điện ba pha.",
+      "Dòng điện ba pha.",
+      "Động cơ điện ba pha."
+    ],
+    "a": "Dòng điện ba pha."
+  },
+  {
+    "q": "Dây quấn của máy phát điện xoay chiều ba pha gồm:",
+    "options": [
+      "Ba cuộn dây sơ cấp và ba cuộn dây thứ cấp.",
+      "Ba cuộn dây AX, BY, CZ có cùng số vòng và kích thước dây, lệch nhau góc 120° trong stato.",
+      "Ba cuộn dây sơ cấp AX, BY, CZ đặt lệch nhau góc 120° trong stato.",
+      "Ba cuộn dây thứ cấp ax, by, cz đặt lệch nhau góc 120° trong stato."
+    ],
+    "a": "Ba cuộn dây AX, BY, CZ có cùng số vòng và kích thước dây, lệch nhau góc 120° trong stato."
+  },
+  {
+    "q": "Điện áp pha là:",
+    "options": [
+      "Điện áp giữa hai dây pha.",
+      "Điện áp giữa dây pha và dây trung tính.",
+      "Điện áp giữa hai dây trung tính.",
+      "Dòng điện chạy trong dây pha."
+    ],
+    "a": "Điện áp giữa dây pha và dây trung tính."
+  },
+  {
+    "q": "Điện áp dây là:",
+    "options": [
+      "Điện áp giữa hai dây pha.",
+      "Điện áp giữa dây pha và dây trung tính.",
+      "Điện áp giữa hai dây trung tính.",
+      "Dòng điện chạy trong dây pha."
+    ],
+    "a": "Điện áp giữa hai dây pha."
+  },
+  {
+    "q": "Nối hình sao là:",
+    "options": [
+      "Nối ba điểm cuối X, Y, Z với ba điểm đầu A, B, C.",
+      "Nối Điểm đầu của pha này với cuối pha kia tạo thành hình sao.",
+      "Nối ba điểm cuối X,Y,Z của ba pha nối lại với nhau tạo thành điểm trung tính O.",
+      "Nối ba điểm đầu A, B, C của ba pha với ba điểm cuối X, Y, Z  lại với nhau tạo thành điểm trung tính O."
+    ],
+    "a": "Nối ba điểm cuối X,Y,Z của ba pha nối lại với nhau tạo thành điểm trung tính O."
+  },
+  {
+    "q": "Nối hình tam giác là:",
+    "options": [
+      "Nối ba điểm cuối X, Y, Z với ba điểm đầu A, B, C.",
+      "Nối điểm đầu của pha này với cuối pha kia tạo thành hình tam giác.",
+      "Nối ba điểm cuối X,Y,Z của ba pha nối lại với nhau tạo thành điểm trung tính O.",
+      "Nối ba điểm đầu A, B, C của ba pha với ba điểm cuối X, Y, Z  lại với nhau tạo thành điểm trung tính O."
+    ],
+    "a": "Nối điểm đầu của pha này với cuối pha kia tạo thành hình tam giác."
+  },
+  {
+    "q": "Một máy phát điện ba pha có điện áp mỗi dây quấn pha là 220V, nếu nối hình sao ta tính được điện áp dây (Ud) bằng:",
+    "options": ["380 V.", "110 V.", "220 V.", "127 V"],
+    "a": "380 V."
+  },
+  {
+    "q": "Cấu tạo phần tĩnh (stator) của máy phát điện xoay chiều ba pha gồm:",
+    "options": [
+      "Hai phần chính là stator và rotor.",
+      "Ba dây quấn đặt lệch nhau 120°.",
+      "Hai phần chính là lõi thép và dây quấn stato.",
+      "Dây quấn ba pha."
+    ],
+    "a": "Hai phần chính là lõi thép và dây quấn stato."
+  },
+  {
+    "q": "Khi cho nam châm điện của máy phát điện xoay chiều ba pha quay với tốc độ không đổi, trong dây quấn mỗi pha xuất hiện (dây quấn mỗi pha hở mạch):",
+    "options": [
+      "Suất điện động xoay chiều một pha.",
+      "Từ trường quay.",
+      "Dòng điện xoay chiều một pha.",
+      "Suất điện động xoay chiều ba pha."
+    ],
+    "a": "Suất điện động xoay chiều một pha."
+  },
+  {
+    "q": "Một máy phát điện ba pha có điện áp mỗi dây quấn pha là 380V, nếu nối hình tam giác ta tính được điện áp dây (Ud):",
+    "options": ["127V.", "380V.", "220V.", "658,2V."],
+    "a": "380V."
+  },
+  {
+    "q": "Một tải ba pha gồm 3 điện trở R = 10Ω nối hình tam giác, nối vào nguồn ba pha có Ud = 220V. Tính dòng điện dây (Id):",
+    "options": ["22A.", "38A.", "11A.", "12,7A."],
+    "a": "38A."
+  },
+  {
+    "q": "Có 6 bóng đèn (số liệu mỗi bóng đèn là P = 100W, U = 127V). Hãy nối 6 bóng  đèn thành tải ba pha đối xứng vào mạch điện có điện áp 127V/220V.",
+    "options": [
+      "nối giữa hai dây pha.",
+      "nối giữa dây pha và dây trung tính.",
+      "nối  thành hình sao.",
+      "Nối thành hình tam giác."
+    ],
+    "a": "nối  thành hình sao."
+  },
+  {
+    "q": "Một tải ba pha gồm 3 điện trở R = 10Ω nối hình sao, nối vào nguồn ba pha có Up = 220V. Tính dòng điện dây (Id):",
+    "options": ["22A.", "38A.", "11A.", "12,7A."],
+    "a": "22A."
+  },
+  {
+    "q": "Dòng điện pha là:",
+    "options": [
+      "Dòng điện chạy trong dây pha.",
+      "Dòng điện chạy trong mỗi pha.",
+      "Dòng điện chạy trong dây trung tính.",
+      "Là điện áp giữa hai dây pha."
+    ],
+    "a": "Dòng điện chạy trong mỗi pha."
+  },
+  {
+    "q": "Dòng điện dây là:",
+    "options": [
+      "Dòng điện chạy trong dây pha.",
+      "Dòng điện chạy trong mỗi pha.",
+      "Dòng điện chạy trong dây trung tính.",
+      "Là điện áp giữa hai dây pha."
+    ],
+    "a": "Dòng điện chạy trong dây pha."
+  },
+  {
+    "q": "Nếu tải ba pha đối xứng, trong trường hợp tải nối hình sao:",
+    "options": ["Ud = Up.", "Ud = √2 Up.", "Ud = √3 Up.", "Up = √3 Ud."],
+    "a": "Ud = √3 Up."
+  },
+  {
+    "q": "Nếu tải ba pha đối xứng, trong trường hợp tải nối hình tam giác:",
+    "options": ["Ud = Up.", "Ud = √2 Up.", "Ud = √3 Up.", "Up = √3 Ud."],
+    "a": "Ud = Up."
+  },
+  {
+    "q": "Nếu tải ba pha đối xứng, trong trường hợp tải nối hình tam giác:",
+    "options": ["Id = Ip.", "Id = √2 Ip.", "Id = √3 Ip.", "Ip = √3 Id."],
+    "a": "Id = √3 Ip."
+  },
+  {
+    "q": "Hệ thống điện quốc gia có nhiệm vụ gì?",
+    "options": [
+      "Sản xuất điện năng.",
+      "Sản xuất, truyền tải điện năng.",
+      "Sản xuất, truyền tải, phân phối điện năng.",
+      "Sản xuất, truyền tải, phân phối và tiêu thụ điện năng."
+    ],
+    "a": "Sản xuất, truyền tải, phân phối và tiêu thụ điện năng."
+  },
+  {
+    "q": "Cấu trúc chung của hệ thống điện quốc gia gồm những thành phần chính nào:",
+    "options": [
+      "Nguồn điện, lưới điện.",
+      "Lưới điện, dây dẫn và tải tiêu thụ.",
+      "Nguồn điện, dây dẫn và tải tiêu thụ.",
+      "Nguồn điện, lưới điện và tải tiêu thụ."
+    ],
+    "a": "Nguồn điện, lưới điện và tải tiêu thụ."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia, nguồn điện có vai trò gì?",
+    "options": [
+      "Tạo ra điện năng.",
+      "Cung cấp điện năng cho hệ thống điện quốc gia.",
+      "Tạo ra điện năng và cung cấp cho hệ thống điện quốc gia.",
+      "Kết nối, truyền tải và phân phối điện năng từ nguồn đến nơi tiêu thụ trong phạm vi toàn quốc."
+    ],
+    "a": "Tạo ra điện năng và cung cấp cho hệ thống điện quốc gia."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia, lưới điện có vai trò gì?",
+    "options": [
+      "Kết nối, truyền tải và phân phối điện năng từ nguồn đến nơi tiêu thụ.",
+      "Cung cấp điện năng cho hệ thống điện quốc gia.",
+      "Tạo ra điện năng và cung cấp cho hệ thống điện quốc gia.",
+      "Kết nối, truyền tải và phân phối điện năng từ nguồn đến nơi tiêu thụ trong phạm vi toàn quốc."
+    ],
+    "a": "Kết nối, truyền tải và phân phối điện năng từ nguồn đến nơi tiêu thụ trong phạm vi toàn quốc."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia, lưới điện truyền tải có điện áp bao nhiêu vôn?",
+    "options": [
+      "220 kV trở xuống.",
+      "110 kV.",
+      "110 kV trở xuống.",
+      "Trên 110 kV."
+    ],
+    "a": "Trên 110 kV."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia, lưới điện phân phối có điện áp bao nhiêu?",
+    "options": [
+      "220kV trở xuống.",
+      "110kV.",
+      "110kV trở xuống.",
+      "Trên 110kV."
+    ],
+    "a": "110kV trở xuống."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia, lưới điện truyền tải có nhiện vụ gì?",
+    "options": [
+      "Truyền tải điện năng từ trạm điện nguồn đến trạm phân phối chính.",
+      "Truyền tải điện năng từ trạm điện nguồn đến tải tiêu thụ.",
+      "Truyền tải điện năng từ trạm điện phân phối chính đến tải tiêu thụ.",
+      "Truyền tải điện năng từ trạm điện nguồn đến trạm biến áp."
+    ],
+    "a": "Truyền tải điện năng từ trạm điện nguồn đến trạm phân phối chính."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia, lưới điện phân phối có nhiện vụ gì?",
+    "options": [
+      "Truyền tải điện năng từ trạm điện nguồn đến trạm phân phối chính.",
+      "Truyền tải điện năng từ trạm điện nguồn đến tải tiêu thụ.",
+      "Truyền tải điện năng từ trạm điện phân phối chính đến tải tiêu thụ.",
+      "Truyền tải điện năng từ trạm điện nguồn đến trạm biến áp."
+    ],
+    "a": "Truyền tải điện năng từ trạm điện phân phối chính đến tải tiêu thụ."
+  },
+  {
+    "q": "Đâu là cấp điện áp trung áp trong hệ thống điện quốc gia?",
+    "options": [
+      "Điện áp từ 1 kV đến 35 kV.",
+      "Điện áp từ 35 kV đến 220 kV.",
+      "Điện áp từ trên 1 kV đến 35 kV.",
+      "Điện áp từ trên 35 kV đến 220 kV."
+    ],
+    "a": "Điện áp từ trên 1 kV đến 35 kV."
+  },
+  {
+    "q": "Đâu là cấp điện áp cao áp trong hệ thống điện quốc gia?",
+    "options": [
+      "Điện áp từ 1 kV đến 35 kV.",
+      "Điện áp từ 35 kV đến 220 kV.",
+      "Điện áp từ trên 1 kV đến 35 kV.",
+      "Điện áp từ trên 35 kV đến 220 kV."
+    ],
+    "a": "Điện áp từ 35 kV đến 220 kV."
+  },
+  {
+    "q": "Cấp điện áp trên 220 kV là của lưới điện nào?",
+    "options": ["Trung áp.", "Hạ áp.", "Siêu cao áp.", "Cao áp."],
+    "a": "Siêu cao áp."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia. Lưới điện gồm các thành phần nào?",
+    "options": [
+      "Các đường dây truyền tải, các trạm điện, hệ thống giám sát và điều khiển.",
+      "Các đường dây truyền tải và phân phối, các trạm điện, hệ thống giám sát và điều khiển.",
+      "Các đường dây truyền tải và phân phối, các trạm điện, hệ thống điều khiển.",
+      "Các đường dây phân phối, các trạm điện, hệ thống giám sát và điều khiển."
+    ],
+    "a": "Các đường dây truyền tải và phân phối, các trạm điện, hệ thống giám sát và điều khiển."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia, đường dây truyền tải và phân phối có chức năng gì?",
+    "options": [
+      "Kết nối nguồn điện, các trạm biến áp và tải tiêu thụ.",
+      "Truyền tải điện năng từ các nhà máy điện đến các trạm biến áp phân phối chính.",
+      "Phân phối điện từ trạm biến áp phân phối đến nơi tiêu thụ.",
+      "Kết nối nguồn điện đến tải tiêu thụ."
+    ],
+    "a": "Kết nối nguồn điện, các trạm biến áp và tải tiêu thụ."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia, đường dây truyền tải có chức năng gì?",
+    "options": [
+      "Kết nối nguồn điện, các trạm biến áp và tải tiêu thụ.",
+      "Truyền tải điện năng từ các nhà máy điện đến các trạm biến áp phân phối chính.",
+      "Phân phối điện từ trạm biến áp phân phối đến nơi tiêu thụ.",
+      "Kết nối nguồn điện đến tải tiêu thụ."
+    ],
+    "a": "Truyền tải điện năng từ các nhà máy điện đến các trạm biến áp phân phối chính."
+  },
+  {
+    "q": "Trong hệ thống điện quốc gia, đường dây phân phối có chức năng gì?",
+    "options": [
+      "Kết nối nguồn điện, các trạm biến áp và tải tiêu thụ.",
+      "Truyền tải điện năng từ các nhà máy điện đến các trạm biến áp phân phối chính.",
+      "Phân phối điện từ trạm biến áp phân phối đến nơi tiêu thụ.",
+      "Kết nối nguồn điện đến tải tiêu thụ."
+    ],
+    "a": "Phân phối điện từ trạm biến áp phân phối đến nơi tiêu thụ."
+  },
+  {
+    "q": "Sản xuất điện năng là",
+    "options": [
+      "quá trình chuyển đổi các dạng năng lượng khác thành năng lượng điện.",
+      "quá trình chuyển đổi điện năng thành cơ năng.",
+      "quá trình chuyển đổi điện năng thành quang năng.",
+      "quá trình chuyển đổi điện năng thành nhiệt năng."
+    ],
+    "a": "quá trình chuyển đổi các dạng năng lượng khác thành năng lượng điện."
+  },
+  {
+    "q": "Ưu điểm của nhà máy thủy điện là:",
+    "options": [
+      "Công suất phát điện lớn.",
+      "Chi phí đầu tư thấp.",
+      "Thời gian xây dựng ngắn.",
+      "Chi phí truyền tải thấp."
+    ],
+    "a": "Công suất phát điện lớn."
+  },
+  {
+    "q": "Nhược điểm của nhà máy thủy điện là:",
+    "options": [
+      "Phát khí thải nhà kính.",
+      "Chi phí vận hành cao.",
+      "Tác động môi trường làm thay đổi cơ chế thủy văn và đa dạng sinh học.",
+      "Năng lượng không tái tạo."
+    ],
+    "a": "Tác động môi trường làm thay đổi cơ chế thủy văn và đa dạng sinh học."
+  },
+  {
+    "q": "Nhà máy nhiệt điện sử dụng nguồn nhiên liệu nào sau đây để sản xuất điện năng?",
+    "options": [
+      "Sử dụng thế năng của nước trong hồ.",
+      "Sử dụng nguyên liệu hóa thạch.",
+      "Sử dụng năng lượng từ phản ứng phân hạch.",
+      "Sử dụng năng lượng gió."
+    ],
+    "a": "Sử dụng nguyên liệu hóa thạch."
+  },
+  {
+    "q": "Nhà máy điện hạt nhân sử dụng nguồn năng lượng nào để sản xuất điện năng?",
+    "options": [
+      "Sử dụng thế năng của nước trong hồ.",
+      "Sử dụng nguyên liệu hóa thạch.",
+      "Sử dụng năng lượng từ phản ứng phân hạch.",
+      "Sử dụng năng lượng gió."
+    ],
+    "a": "Sử dụng năng lượng từ phản ứng phân hạch."
+  },
+  {
+    "q": "Nhược điểm của nhà máy điện gió là:",
+    "options": [
+      "Phát khí thải nhà kính.",
+      "Năng lương không tái tạo.",
+      "Công suất phát điện thấp, không ổn định do cường độ sáng mặt trời thay đổi.",
+      "Các turbine gió có thể tạo ra tiếng ồn lớn."
+    ],
+    "a": "Các turbine gió có thể tạo ra tiếng ồn lớn."
+  },
+  {
+    "q": "Nhược điểm của nhà máy điện mặt trời là:",
+    "options": [
+      "Phát khí thải nhà kính.",
+      "Năng lương tái tạo, sạch, vô tân..",
+      "Công suất phát điện thấp, không ổn định do cường độ sáng mặt trời thay đổi.",
+      "Các turbine gió có thể tạo ra tiếng ồn lớn."
+    ],
+    "a": "Công suất phát điện thấp, không ổn định do cường độ sáng mặt trời thay đổi."
+  },
+  {
+    "q": "Nguồn năng lượng để sản xuất điện năng được chia thành mấy nhóm?",
+    "options": ["Một.", "Hai.", "Ba.", "Bốn."],
+    "a": "Hai."
+  },
+  {
+    "q": "Mạng điện sản xuất quy mô nhỏ được lấy điện từ đâu để cung cấp cho tải tiêu thụ?",
+    "options": [
+      "Lưới điện phân phối.",
+      "Lưới điện truyền tải.",
+      "Lưới điện phân phối hoặc lưới điện truyền tải.",
+      "Trạm biến áp tăng áp."
+    ],
+    "a": "Lưới điện phân phối."
+  },
+  {
+    "q": "Đâu là tải của mạng điện sản xuất quy mô nhỏ?",
+    "options": [
+      "Động cơ điện.",
+      "Thiết bị điện.",
+      "Thiết bị chiếu sáng.",
+      "Động cơ điện, thiết bị điện và thiết bị chiếu sáng."
+    ],
+    "a": "Động cơ điện, thiết bị điện và thiết bị chiếu sáng."
+  },
+  {
+    "q": "Mạng điện hạ áp dùng trong sinh hoạt, tủ điện phân phối tổng được đặt ở vị trí nào?",
+    "options": [
+      "Trạm biến áp.",
+      "Phân xưởng sản xuất.",
+      "Trạm biến áp hoặc phân xưởng sản xuất.",
+      "Trạm biến áp và phân xưởng sản xuất."
+    ],
+    "a": "Trạm biến áp."
+  },
+  {
+    "q": "Tủ điện được đặt ở phân xưởng sản xuất, lấy điện từ tủ điện phân phối tổng.",
+    "options": [
+      "Tủ điện phân phối tổng.",
+      "Tủ điện phân phối nhánh.",
+      "Tủ điện động lực.",
+      "Tủ điện chiếu sáng."
+    ],
+    "a": "Tủ điện phân phối nhánh."
+  },
+  {
+    "q": "Tủ điện được đặt ở phân xưởng sản xuất, lấy điện từ tủ điện phân phối nhánh để cấp điện cho tải tiêu thụ là các máy sản xuất trong phân xưởng.",
+    "options": [
+      "Tủ động lực và tủ chiếu sáng.",
+      "Tủ điện phân phối nhánh.",
+      "Tủ điện động lực.",
+      "Tủ điện chiếu sáng."
+    ],
+    "a": "Tủ điện động lực."
+  },
+  {
+    "q": "Tủ điện được đặt ở phân xưởng sản xuất, lấy điện từ tủ điện phân phối nhánh để cấp điện cho hệ thống chiếu sáng trong phân xưởng.",
+    "options": [
+      "Tủ động lực và tủ chiếu sáng.",
+      "Tủ điện phân phối nhánh.",
+      "Tủ điện động lực.",
+      "Tủ điện chiếu sáng."
+    ],
+    "a": "Tủ điện chiếu sáng."
+  },
+  {
+    "q": "Trạm biến áp trong mạng điện sản xuất quy mô nhỏ có vai trò gì?",
+    "options": [
+      "Hạ áp từ lưới điện phân phối 22 kV hoặc 35 kV xuống điện áp hạ áp 380/220V.",
+      "Hạ áp từ lưới điện phân phối 22 kV hoặc 35 kV xuống điện áp hạ áp 380V.",
+      "Hạ áp từ lưới điện phân phối 22 kV hoặc 35 kV xuống điện áp hạ áp 220V.",
+      "Tăng điện áp 220V hoặc 380V lên 22 kV hoặc 35 kV để giảm hao phí điện năng."
+    ],
+    "a": "Hạ áp từ lưới điện phân phối 22 kV hoặc 35 kV xuống điện áp hạ áp 380/220V."
+  },
+  {
+    "q": "Mạng điện hạ áp dùng trong sinh hoạt có đặc điểm gì?",
+    "options": [
+      "Số lượng gia đình sử dụng điện nhỏ.",
+      "Tải tiêu thụ điện có quy mô lớn và phân tán.",
+      "Tải tiêu thụ điện có quy mô nhỏ và phân tán.",
+      "Mức điện áp cao."
+    ],
+    "a": "Tải tiêu thụ điện có quy mô nhỏ và phân tán."
+  },
+  {
+    "q": "Mạng điện hạ áp dùng trong sinh hoạt có mấy thành phần chính?",
+    "options": ["Hai.", "Ba.", "Bốn.", "Năm."],
+    "a": "Bốn."
+  },
+  {
+    "q": "Tủ điện phân phối tổng trong mạng điện hạ áp dùng trong sinh hoạt được đặt ở vị trí nào?",
+    "options": [
+      "Trạm biến áp.",
+      "Các khu vực  dân cư.",
+      "Trạm biến áp và khu dân cư.",
+      "Trạm biến áp hoặc khu dân cư."
+    ],
+    "a": "Trạm biến áp."
+  },
+  {
+    "q": "Tủ điện phân phối khu vực trong mạng điện hạ áp dùng trong sinh hoạt được đặt ở vị trí nào?",
+    "options": [
+      "Trạm biến áp.",
+      "Các khu vực  dân cư.",
+      "Hộ gia đình.",
+      "Trạm biến áp hoặc các khu vực dân cư."
+    ],
+    "a": "Các khu vực  dân cư."
+  },
+  {
+    "q": "Mạng điện hạ áp dùng trong sinh hoạt, tủ điện phân phối tổng sẽ phân phối điện đi đâu?",
+    "options": [
+      "Phân phối cho các tủ phân phối khu vực.",
+      "Phân phối tới các hộ gia đình.",
+      "Phân phối cho các tủ khu vực hoặc các hộ gia đình.",
+      "Phân phối cho các tải tiêu thụ điện."
+    ],
+    "a": "Phân phối cho các tủ phân phối khu vực."
+  },
+  {
+    "q": "Đường dây trục chính trong mạng điện hạ áp dùng trong sinh hoạt là loại nào?",
+    "options": [
+      "Ba pha ba dây.",
+      "Ba pha bốn dây.",
+      "Một pha hai dây",
+      "Ba pha ba dây hoặc ba pha bốn dây."
+    ],
+    "a": "Ba pha bốn dây."
+  }
+]

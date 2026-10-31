@@ -75,6 +75,8 @@ const Outline = {
     q.textContent = `Câu ${index + 1}. ${item.q}`;
     card.appendChild(q);
 
+    appendQuestionImage(card, item);
+
     const letters = 'ABCDEFGH';
     const answerIndex = Array.isArray(item.options) ? item.options.indexOf(item.a) : -1;
 
@@ -102,6 +104,8 @@ const Outline = {
     passage.textContent = item.title || `Câu ${index + 1}.`;
     card.appendChild(passage);
 
+    appendQuestionImage(card, item);
+
     for (const item_ of item.items) {
       const row = el('div', 'tf-item');
       if (item_.a) row.classList.add('correct');
@@ -125,6 +129,8 @@ const Outline = {
     const q = el('p', 'q-text');
     q.textContent = `Câu ${index + 1}. ${item.q}`;
     card.appendChild(q);
+
+    appendQuestionImage(card, item);
 
     const answer = el('div', 'answer-row');
 

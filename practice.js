@@ -167,6 +167,8 @@ const Practice = {
     qtext.textContent = q.item.q;
     buffer.appendChild(qtext);
 
+    appendQuestionImage(buffer, q.item);
+
     const opts = el('div', 'practice-opts');
     const answerIndex = q.item.options.indexOf(q.item.a);
 
@@ -211,6 +213,8 @@ const Practice = {
     const passage = el('p', 'practice-passage');
     passage.textContent = stripNumbering(q.item.title);
     buffer.appendChild(passage);
+
+    appendQuestionImage(buffer, q.item);
 
     q.item.items.forEach((it, yi) => {
       const row = el('div', 'tf-row');
@@ -274,6 +278,8 @@ const Practice = {
     qtext.textContent = q.item.q;
     buffer.appendChild(qtext);
 
+    appendQuestionImage(buffer, q.item);
+
     if (!graded) {
       const form = el('div', 'practice-form');
       const input = el('input', 'practice-input');
@@ -321,6 +327,8 @@ const Practice = {
     const qtext = el('p', 'practice-qtext');
     qtext.textContent = q.item.q;
     buffer.appendChild(qtext);
+
+    appendQuestionImage(buffer, q.item);
 
     if (!viewed) {
       const form = el('div', 'practice-form');
@@ -441,4 +449,20 @@ const Practice = {
 
 function stripNumbering(text) {
   return (text || '').replace(/^Câu\s*\d+\.\s*/, '');
+}
+
+/**
+ * Chèn ảnh câu hỏi nếu dữ liệu có trường `img` (URL tuyệt đối hoặc
+ * đường dẫn tương đối, ví dụ "exercises/001/images/q5.png").
+ * Cả outline.js và test.js đều dùng hàm này.
+ */
+function appendQuestionImage(buffer, item) {
+  if (!item || !item.img) return;
+  const fig = el('figure', 'q-image');
+  const img = el('img');
+  img.src = item.img;
+  img.alt = item.q ? item.q.slice(0, 100) : 'Hình minh họa câu hỏi';
+  img.loading = 'lazy';
+  fig.appendChild(img);
+  buffer.appendChild(fig);
 }

@@ -19,6 +19,24 @@
           "file_path": "exercises/001/section-2.json"
         }
       ]
+    },
+    {
+      "id": "002",
+      "title": "Ôn tập giữa kì I môn Công Nghệ 12",
+      "short_description": "đề cương ôn tập",
+      "total_questions": 74,
+      "sections": [
+        {
+          "title": "Phần 1: Trắc nghiệm nhiều lựa chọn",
+          "number_of_questions": 70,
+          "file_path": "exercises/002/section-1.json"
+        },
+        {
+          "title": "Phần 2: Trắc nghiệm đúng sai",
+          "number_of_questions": 4,
+          "file_path": "exercises/002/section-2.json"
+        }
+      ]
     }
   ]
 }
