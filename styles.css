@@ -1001,21 +1001,16 @@ header p {
   }
 
   .pal-nav {
-    order: -1;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    order: 1;
     padding: 10px;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
   }
 
   .pal-groups,
   .pal-grid {
-    order: 1;
+    order: 2;
   }
 
   .pal-grid {
