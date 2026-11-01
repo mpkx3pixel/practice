@@ -89,20 +89,17 @@ const Practice = {
 
   PAGE_SIZE: 30,
 
+  /**
+   * Chia tổng số câu thành các nhóm: các nhóm đầu đầy PAGE_SIZE câu,
+   * nhóm cuối chứa phần lẻ còn lại. Ví dụ 65 / 30 → 30 · 30 · 5.
+   * Trả về mảng [{start, end}] theo chỉ số câu (end là exclusive).
+   */
   computePages(total) {
     if (total <= this.PAGE_SIZE) return [{ start: 0, end: total }];
 
-    const ranges = [{ start: 0, end: this.PAGE_SIZE }];
-    const rest = total - this.PAGE_SIZE;
-    const count = Math.ceil(rest / this.PAGE_SIZE);
-    const base = Math.floor(rest / count);
-    const extra = rest % count;
-
-    let start = this.PAGE_SIZE;
-    for (let i = 0; i < count; i++) {
-      const size = base + (i < extra ? 1 : 0);
-      ranges.push({ start, end: start + size });
-      start += size;
+    const ranges = [];
+    for (let start = 0; start < total; start += this.PAGE_SIZE) {
+      ranges.push({ start, end: Math.min(start + this.PAGE_SIZE, total) });
     }
     return ranges;
   },

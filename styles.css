@@ -987,6 +987,43 @@ header p {
   .practice-wrap {
     grid-template-columns: 1fr;
   }
+
+  /* Màn hẹp/dọc: đưa hàng nút điều hướng lên đầu câu hỏi,
+     lưới câu + chips nhóm để lại phía dưới (theo thứ tự flex/order) */
+  .practice-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .practice-side {
+    display: contents;
+  }
+
+  .pal-nav {
+    order: -1;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .pal-groups,
+  .pal-grid {
+    order: 1;
+  }
+
+  .pal-grid {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+  }
 }
 
 @media (max-width: 480px) {
