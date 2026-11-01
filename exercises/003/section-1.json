@@ -1,0 +1,287 @@
+[
+  {
+    "q": "Điểm khác nhau của switch và hub là gì?",
+    "options": ["Hình dạng.", "Số cổng.", "Cách thức hoạt động.", "Màu sắc."],
+    "a": "Cách thức hoạt động."
+  },
+  {
+    "q": "Mạng cục bộ còn được gọi là",
+    "options": ["mạng WAN.", "mạng PAN.", "mạng MAN.", "mạng LAN."],
+    "a": "mạng LAN."
+  },
+  {
+    "q": "Router là gì?",
+    "options": [
+      "Bộ chuyển mạch.",
+      "Bộ thu phát không dây.",
+      "Bộ định tuyến.",
+      "Bộ chia tín hiệu."
+    ],
+    "a": "Bộ định tuyến."
+  },
+  {
+    "q": "Wi-Fi sử dụng loại sóng nào để truyền dữ liệu?",
+    "options": [
+      "Sóng điện từ.",
+      "Sóng vô tuyến điện.",
+      "Sóng ánh sáng.",
+      "Sóng mang."
+    ],
+    "a": "Sóng vô tuyến điện."
+  },
+  {
+    "q": "Trên mỗi router, cổng để kết nối với các router khác gọi là gì?",
+    "options": ["Cổng WAP.", "Cổng WAN.", "Cổng LAN.", "Cổng AP."],
+    "a": "Cổng WAN."
+  },
+  {
+    "q": "Loại modem nào cho phép nối hai máy tính qua hệ thống chuyển mạch của mạng điện thoại công cộng?",
+    "options": [
+      "Modem quay số.",
+      "Modem GSM 3G, 4G, 5G,…",
+      "Modem ADSL.",
+      "Modem quang."
+    ],
+    "a": "Modem quay số."
+  },
+  {
+    "q": "Thiết bị nào xác định cổng kết nối giữa thiết bị gửi và thiết bị nhận, sau đó thiết lập tạm thời kênh truyền giữa hai cổng kết nối để truyền dữ liệu và huỷ kết nối sau khi hoàn thành việc truyền?",
+    "options": ["Switch.", "Router.", "Hub.", "Modem."],
+    "a": "Switch."
+  },
+  {
+    "q": "Phát biểu nào sau đây đúng?",
+    "options": [
+      "Mạng viễn thông sử dụng các modem để chuyển tiếp dữ liệu.",
+      "Thông thường LAN kết nối có dây các máy tính qua các thiết bị như switch hay hub trong một phạm vi địa lí nhất định.",
+      "Khi dùng hub thì tín hiệu đi từ máy gửi đến máy nhận sẽ không gây xung đột với tín hiệu của các cuộc truyền ở cổng khác.",
+      "Switch có chi phí rẻ hơn rất nhiều so với một hub có cùng số cổng."
+    ],
+    "a": "Thông thường LAN kết nối có dây các máy tính qua các thiết bị như switch hay hub trong một phạm vi địa lí nhất định."
+  },
+  {
+    "q": "Khi kết nối hai máy tính (có thể cách xa hàng nghìn kilômét) qua Internet, người ta sử dụng thiết bị nào để kết nối các LAN với nhau?",
+    "options": ["Hub.", "Wireless Access Point.", "Switch.", "Router."],
+    "a": "Router."
+  },
+  {
+    "q": "Wireless Access Point (WAP) có chức năng gì?",
+    "options": [
+      "Chuyển đổi tín hiệu từ tín hiệu số sang tín hiệu tương tự và ngược lại, thường dùng khi kết nối LAN với Internet.",
+      "Dùng để kết nối các máy tính trong cùng LAN trực tiếp qua cáp mạng.",
+      "Dùng để kết nối các thiết bị đầu cuối qua sóng Wi-Fi giúp giảm chi phí thiết lập LAN hoặc kết nối với một LAN để mở rộng phạm vi làm việc.",
+      "Dùng để dẫn đường cho dữ liệu khi kết nối trên mạng diện rộng như Internet."
+    ],
+    "a": "Dùng để kết nối các thiết bị đầu cuối qua sóng Wi-Fi giúp giảm chi phí thiết lập LAN hoặc kết nối với một LAN để mở rộng phạm vi làm việc."
+  },
+  {
+    "q": "Các LAN thường dùng loại cáp mạng nào?",
+    "options": ["FTP.", "STP.", "ETP.", "UTP."],
+    "a": "UTP."
+  },
+  {
+    "q": "Khi kết nối máy tính với các thiết bị mạng, cần cắm một đầu giắc của cáp vào cổng nào của máy tính?",
+    "options": ["RJ45.", "VJ45.", "CJ45.", "PJ45."],
+    "a": "RJ45."
+  },
+  {
+    "q": "Phát biểu nào sau đây sai?",
+    "options": [
+      "Switch dùng để kết nối các đoạn mạng với nhau theo mô hình hình sao.",
+      "Hiện nay có hai loại Hub phổ biến là Active Hub và Smart Hub.",
+      "Router là một thiết bị mạng thuộc lớp 2 của mô hình OSI (Network Layer).",
+      "Modem có chức năng chuyển hoá các gói dữ liệu từ nhà cung cấp dịch vụ mạng (ISP) thành các kết nối Internet cho các router hoặc các thiết bị liên kết mạng khác qua địa chỉ IP."
+    ],
+    "a": "Router là một thiết bị mạng thuộc lớp 2 của mô hình OSI (Network Layer)."
+  },
+  {
+    "q": "Địa chỉ email nào sau đây là không hợp lệ?",
+    "options": [
+      "baochau1805@gmail.com.",
+      "ngoc anh2007@gmail.com.",
+      "nguyenthutrang_k68@vnu.edu.vn.",
+      "minhtuan@yahoo.com.vn."
+    ],
+    "a": "ngoc anh2007@gmail.com."
+  },
+  {
+    "q": "Các quy định liên quan đến gửi thư có tên là gì?",
+    "options": [
+      "Giao thức IMAP.",
+      "Giao thức MQTT.",
+      "Giao thức SMTP.",
+      "Giao thức POP3."
+    ],
+    "a": "Giao thức SMTP."
+  },
+  {
+    "q": "Nhóm địa chỉ IP 172.18.*.* có cổng",
+    "options": ["1.", "2.", "3.", "4."],
+    "a": "2."
+  },
+  {
+    "q": "Hiện nay có những loại địa chỉ IP nào?",
+    "options": [
+      "IPv4 và IPv6.",
+      "IPv2 và IPv4.",
+      "IPv4 và IPv5.",
+      "IPv1 và IPv3."
+    ],
+    "a": "IPv4 và IPv6."
+  },
+  {
+    "q": "Địa chỉ máy chủ của Bộ Giáo dục và Đào tạo có thể thay thế bằng",
+    "options": ["moet.edu.com.", "edu.com.vn.", "moet.edu.vn.", "edu.moet.vn"],
+    "a": "moet.edu.vn."
+  },
+  {
+    "q": "Việc trao đổi dữ liệu giữa các máy tính trong mạng cục bộ tuân thủ theo giao thức nào?",
+    "options": [
+      "Giao thức HTTPS.",
+      "Giao thức TCP/IP.",
+      "Giao thức DNS.",
+      "Giao thức Ethernet."
+    ],
+    "a": "Giao thức Ethernet."
+  },
+  {
+    "q": "Việc truyền dữ liệu trong mạng cục bộ sẽ căn cứ vào địa chỉ gì?",
+    "options": [
+      "Địa chỉ IP.",
+      "Địa chỉ MAC.",
+      "Địa chỉ LAN.",
+      "Địa chỉ Server."
+    ],
+    "a": "Địa chỉ MAC."
+  },
+  {
+    "q": "Phát biểu nào sau đây sai?",
+    "options": [
+      "Theo phương pháp định tuyến tĩnh, mỗi router có một bảng định tuyến.",
+      "Giao thức TCP đảm bảo việc truyền dữ liệu theo từng ứng dụng một cách chính xác, tin cậy và hiệu quả.",
+      "MAC là địa chỉ vật lí của máy tính.",
+      "Giao thức IP đảm bảo chuyển dữ liệu từ mạng này đến mạng kia và chuyển dữ liệu đến một ứng dụng cụ thể trên một máy cụ thể."
+    ],
+    "a": "Giao thức IP đảm bảo chuyển dữ liệu từ mạng này đến mạng kia và chuyển dữ liệu đến một ứng dụng cụ thể trên một máy cụ thể."
+  },
+  {
+    "q": "Giao thức quy định cách biểu diễn (mã hoá) các trang web là",
+    "options": ["SNMP.", "DNS.", "HTTP.", "DHCP."],
+    "a": "HTTP."
+  },
+  {
+    "q": "Lệnh nào của giao thức ICMP (Internet Control Message Protocol) giúp kiểm tra máy tính có kết nối được với một máy tính hay một thiết bị mạng hay không?",
+    "options": ["touch.", "mkdir.", "ping.", "tracert."],
+    "a": "ping."
+  },
+  {
+    "q": "Địa chỉ IP 11001011 10100010 00101001 11111110 dưới dạng thập phân là",
+    "options": [
+      "203.162.41.254.",
+      "230.178.52.166.",
+      "203.126.71.235.",
+      "235.197.80.255."
+    ],
+    "a": "203.162.41.254."
+  },
+  {
+    "q": "Lệnh dùng để kiểm tra cấu hình IP của máy tính đang sử dụng là",
+    "options": ["systeminfo.", "taskkill.", "driverquery.", "ipconfig."],
+    "a": "ipconfig."
+  },
+  {
+    "q": "Giao thức mạng nào hỗ trợ lấy địa chỉ MAC theo địa chỉ IP?",
+    "options": ["DDS.", "ICMP.", "ARP.", "BGP."],
+    "a": "ARP."
+  },
+  {
+    "q": "Các quy tắc ứng xử trên mạng xã hội phù hợp với quy định của pháp luật được nêu trong văn bản nào?",
+    "options": [
+      "Quyết định số 874-QĐ-BTTTT ngày 17/6/2021.",
+      "Quyết định số 874-QĐ-BTTTT ngày 17/6/2019.",
+      "Quyết định số 847-QĐ-BTTTT ngày 17/6/2021.",
+      "Quyết định số 784-QĐ-BTTTT ngày 17/6/2020."
+    ],
+    "a": "Quyết định số 874-QĐ-BTTTT ngày 17/6/2021."
+  },
+  {
+    "q": "Phương án nào sau đây không là công cụ giao tiếp trong không gian mạng?",
+    "options": [
+      "Mạng xã hội.",
+      "Hội nghị truyền hình.",
+      "Thư giấy.",
+      "FaceTime."
+    ],
+    "a": "Thư giấy."
+  },
+  {
+    "q": "Giao tiếp trong không gian mạng giúp mở rộng kết nối xã hội như thế nào?",
+    "options": [
+      "Không gian mạng cung cấp nhiều công cụ giao tiếp trực tuyến như hội nghị truyền hình, nhắn tin nhanh, thư điện tử, mạng xã hội, ...",
+      "Những người sống xa nhau có thể giao tiếp với nhau mọi lúc, mọi nơi, miễn là có kết nối mạng.",
+      "Điện thoại video giúp con người gần nhau hơn khi không có điều kiện sống cùng nhau.",
+      "Giúp xây dựng thương hiệu cá nhân hoặc doanh nghiệp bằng cách thông qua các kênh truyền thông xã hội, tạo ấn tượng tốt để thu hút khách hàng và bạn bè."
+    ],
+    "a": "Giúp xây dựng thương hiệu cá nhân hoặc doanh nghiệp bằng cách thông qua các kênh truyền thông xã hội, tạo ấn tượng tốt để thu hút khách hàng và bạn bè."
+  },
+  {
+    "q": "Vì sao lại nói giao tiếp trong không gian mạng ẩn chứa nhiều nguy cơ về bảo mật và quyền riêng tư?",
+    "options": [
+      "Trong không gian mạng, người sử dụng có thể dễ dàng giấu mặt, tạo ra các bản sao không đầy đủ của bản thân hoặc giả mạo thông tin, làm cho người khác khó đánh giá được tính chân thật của thông tin và sự thật về người đối diện.",
+      "Mất kết nối mạng dẫn đến giao tiếp bị trì hoãn hoặc bị gián đoạn.",
+      "Dữ liệu bị xâm phạm khiến các thông tin riêng tư và nhạy cảm bị rò rỉ hoặc bị tấn công bởi những kẻ xấu.",
+      "Thư điện tử hay tin nhắn có thể gây khó khăn trong việc truyền đạt cảm xúc và dẫn đến những hiểu lầm không đáng có."
+    ],
+    "a": "Dữ liệu bị xâm phạm khiến các thông tin riêng tư và nhạy cảm bị rò rỉ hoặc bị tấn công bởi những kẻ xấu."
+  },
+  {
+    "q": "Chia sẻ thông tin chính xác và đáng tin cậy, tránh lan truyền thông tin sai lệch hoặc tin đồn thể hiện khía cạnh nào trong việc ứng xử nhân văn trong không gian mạng?",
+    "options": ["Lịch sự.", "Thấu hiểu.", "Tôn trọng.", "Hỗ trợ."],
+    "a": "Tôn trọng."
+  },
+  {
+    "q": "Em cần ứng xử như thế nào để thể hiện sự tôn trọng khi giao tiếp trong không gian mạng?",
+    "options": [
+      "Cố gắng đặt mình vào hoàn cảnh của người khác để có thể hiểu được những suy nghĩ, tình cảm, vấn đề của họ.",
+      "Không sử dụng ngôn từ nhạy cảm, lăng mạ, châm chọc, phỉ bảng hoặc phân biệt chủng tộc, giới tính, tôn giáo,…",
+      "Không châm chọc hoặc làm cho người khác cảm thấy bị tổn thương.",
+      "Gửi những lời động viên chân thành, những tin nhắn an ủi khi người khác đang gặp khó khăn."
+    ],
+    "a": "Không sử dụng ngôn từ nhạy cảm, lăng mạ, châm chọc, phỉ bảng hoặc phân biệt chủng tộc, giới tính, tôn giáo,…"
+  },
+  {
+    "q": "Em cần lầm gì để hình thành thói quen ứng xử nhân văn trong không gian mạng?",
+    "options": [
+      "Đối xử với người khác theo cách mà mình muốn.",
+      "Tự kiểm điểm, cải thiện hành vi trực tuyến của mình.",
+      "Làm theo ý muốn cá nhân, không tôn trọng ý kiến của người khác.",
+      "Sử dụng ngôn từ và cách viết tuỳ hứng."
+    ],
+    "a": "Tự kiểm điểm, cải thiện hành vi trực tuyến của mình."
+  },
+  {
+    "q": "Khi tham một cuộc thảo luận trên mạng xã hội, em cần ứng xử như thế nào?",
+    "options": [
+      "Tự ý trao đổi thông tin riêng tư trong thư điện tử giữa hai người với bên thứ ba.",
+      "Mặc quần áo lịch sự và không để lộ những vật dụng hoặc cảnh quan không phù hợp.",
+      "Sử dụng ngôn từ khiêu khích khi không đồng tình với ý kiến của người khác.",
+      "Nếu có ý kiến trái ngược, cần trao đổi một cách lịch sự trên tinh thần tôn trọng quan điểm của người khác."
+    ],
+    "a": "Nếu có ý kiến trái ngược, cần trao đổi một cách lịch sự trên tinh thần tôn trọng quan điểm của người khác."
+  },
+  {
+    "q": "Phương án nào sau đây không là tình huống sử dụng giao tiếp trong không gian mạng?",
+    "options": [
+      "Tham gia một cuộc họp trực tuyến.",
+      "Tới thăm nhà họ hàng.",
+      "Nộp bài tập bằng thư điện tử.",
+      "Trò chuyện nhóm trên Facebook."
+    ],
+    "a": "Tới thăm nhà họ hàng."
+  },
+  {
+    "q": "Trợ lí ảo được phát triển đặc biệt cho hệ điều hành Windows là",
+    "options": ["Siri.", "Cortana.", "Bixby.", "Alexa."],
+    "a": "Cortana."
+  }
+]

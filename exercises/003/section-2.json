@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Câu 1: Máy tính (kể cả các thiết bị di động) có thể kết nối vào mạng bằng cáp tín hiệu hoặc qua sóng Wi-Fi.",
+    "items": [
+      {
+        "t": "a. Wi-Fi là chữ viết tắt của cụm từ Wireless Fidelity.",
+        "a": true
+      },
+      {
+        "t": "b. Hầu hết các máy tính để bàn đều có sẵn khả năng kết nối Wi-Fi như máy tính xách tay hay điện thoại thông minh.",
+        "a": false
+      },
+      {
+        "t": "c. Để máy tính trong LAN có thể giao tiếp với Internet thì chỉ cần cắm cáp mạng UTP vào cổng RJ45 của máy tính.",
+        "a": false
+      },
+      {
+        "t": "d. Muốn kết nối thiết bị di động vào LAN bằng một trạm thu phát Wi-Fi được bảo mật, ta cần gõ đúng mật khẩu của trạm thu phát Wi-Fi đó.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 2: Thiết bị mạng đảm bảo kết nối các máy tính, thiết bị thông minh,… tạo thành mạng máy tính.",
+    "items": [
+      {
+        "t": "a. Wi-Fi là thiết bị kết nối không dây trong mạng cục bộ.",
+        "a": true
+      },
+      {
+        "t": "b. Khi máy tính gửi dữ liệu qua một cổng của switch, tín hiệu sẽ được gửi đến tất cả các cổng còn lại.",
+        "a": false
+      },
+      {
+        "t": "c. Mỗi router có một số cổng có thể kết nối trực tiếp vào LAN gọi là cổng LAN.",
+        "a": true
+      },
+      {
+        "t": "d. Modem quay số (dial-up) được sử dụng rất phổ biến để kết nối Internet tốc độ cao trước khi cáp quang được dùng rộng rãi.",
+        "a": false
+      }
+    ]
+  },
+  {
+    "title": "Câu 3. Hai giao thức IP và TCP xác định cách thức kết nối và trao đổi dữ liệu có tính đặc thù của Internet.",
+    "items": [
+      {
+        "t": "a. Địa chỉ IP giống với địa chỉ MAC.",
+        "a": false
+      },
+      {
+        "t": "b. Mỗi địa chỉ IP là một số 4 bit.",
+        "a": false
+      },
+      {
+        "t": "c. Giao thức TCP chỉ đảm bảo chuyển dữ liệu từ mạng này đến mạng kia mà không đảm bảo chuyển dữ liệu đến một ứng dụng cụ thể trên một máy cụ thể.",
+        "a": false
+      },
+      {
+        "t": "d. Việc tách dữ liệu thành nhiều gói cho phép nhiều cuộc truyền khác nhau có thể được thực hiện xen kẽ nhau trên cùng một đường truyền vật lí giúp tận dụng được đường truyền.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 4: Tất cả các hoạt động truyền thông trên mạng đều cần có giao thức giúp việc gửi, nhận dữ liệu chính xác, tin cậy và hiệu quả.",
+    "items": [
+      {
+        "t": "a. Giao thức mạng còn được gọi là giao thức truyền thông.",
+        "a": true
+      },
+      {
+        "t": "b. DNS là giao thức truyền tải siêu văn bản.",
+        "a": false
+      },
+      {
+        "t": "c. Các gói tin gửi đi trên Internet luôn phải được gán địa chỉ IP của máy tính gửi và máy tính nhận.",
+        "a": true
+      },
+      {
+        "t": "d. Giao thức TCP quy định cách thiết lập địa chỉ cho các thiết bị tham gia mạng và cách dẫn đường các gói dữ liệu theo địa chỉ từ thiết bị gửi đến thiết bị nhận.",
+        "a": false
+      }
+    ]
+  },
+  {
+    "title": "Câu 5. Trong bối cảnh hội nhập toàn cầu hiện nay, sự bùng nổ của công nghệ thông tin và truyền thông đã góp phần thay đổi phương thức giao tiếp trong xã hội.",
+    "items": [
+      {
+        "t": "a. Không gian mạng cho phép con người giao tiếp với nhau thông qua các phần mềm và dịch vụ giao tiếp trực tuyến như mạng xã hội, thư giấy, ứng dụng nhắn tin, gọi điện thoại video,…",
+        "a": false
+      },
+      {
+        "t": "b. Giao tiếp trực tuyến có thể được thực hiện mọi nơi, mọi lúc, miễn là có kết nối mạng.",
+        "a": true
+      },
+      {
+        "t": "c. Giao tiếp trong không gian mạng có thể gây khó khăn trong việc truyền đạt cảm xúc và dẫn đến những hiểu lầm không đáng có.",
+        "a": true
+      },
+      {
+        "t": "d. “Tránh gửi nội dung thư rác hoặc quảng cáo không liên quan đến nội dung chính của cuộc trò chuyện” thể hiện khía cạnh tôn trọng trong việc ứng xử nhân văn trong không gian mạng.",
+        "a": false
+      }
+    ]
+  }
+]

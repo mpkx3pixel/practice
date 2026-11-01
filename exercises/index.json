@@ -37,6 +37,25 @@
           "file_path": "exercises/002/section-2.json"
         }
       ]
+    },
+    {
+      "id": "003",
+      "title": "Ôn tập giữa kì I môn Tin học 12(lớp tin)",
+      "short_description": "đề cương ôn tập",
+      "note": "Câu giao thức mạng nào hỗ trợ lấy địa chỉ MAC theo địa chỉ IP đã được sửa lại thành ARP\n Câu Chia sẻ thông tin chính xác và đáng tin cậy, tránh lan truyền thông tin sai lệch hoặc tin đồn thể hiện khía cạnh nào trong việc ứng xử nhân văn trong không gian mạng? sửa lại thành tôn trọng \n Câu Em cần ứng xử như thế nào để thể hiện sự tôn trọng khi giao tiếp trong không gian mạng? sửa lại thành Không sử dụng ngôn từ nhạy cảm, lăng mạ, châm chọc, phỉ bảng hoặc phân biệt chủng tộc, giới tính, tôn giáo,…\n (đang hỏi lại thông tin)",
+      "total_questions": 41,
+      "sections": [
+        {
+          "title": "Phần 1: Trắc nghiệm nhiều lựa chọn",
+          "number_of_questions": 36,
+          "file_path": "exercises/003/section-1.json"
+        },
+        {
+          "title": "Phần 2: Trắc nghiệm đúng sai",
+          "number_of_questions": 5,
+          "file_path": "exercises/003/section-2.json"
+        }
+      ]
     }
   ]
 }
