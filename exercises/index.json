@@ -62,7 +62,7 @@
       "id": "004",
       "title": "Ôn tập giữa kì I môn Tin học 12(lớp tin) - SQL",
       "short_description": "đề cương ôn tập",
-      "note": "Có thể chạy lệnh SQL trực tiếp, lệnh đáp án chỉ là mẫu tham khảo, tính đáp án theo kết quả thực khi in ra màn hình",
+      "note": "Có thể chạy lệnh SQL trực tiếp, lệnh đáp án chỉ là mẫu tham khảo, tính đáp án theo kết quả thực khi in ra màn hình\n Đã fix một số lỗi câu hỏi =)))",
       "total_questions": 16,
       "sections": [
         {

@@ -13,7 +13,7 @@
   },
   {
     "type": "sql",
-    "q": "In danh sách gồm: Ho, ten, Chucv, TenPB, LuongCB. Nhưng chỉ hiển thị những người có LuongCB từ 20.000 đến 35.000 thuộc phòng Tài Vụ và Sản Xuất.",
+    "q": "In danh sách gồm: Ho, ten, Chucvu, TenPB, LuongCB. Nhưng chỉ hiển thị những người có LuongCB từ 20.000 đến 35.000 thuộc phòng Tài Vụ và Sản Xuất.",
     "setupSql": "CREATE TABLE PhongBan (MaPB VARCHAR(10) PRIMARY KEY,TenPB VARCHAR(50) NOT NULL );\nCREATE TABLE NhanVien (MaNV INT PRIMARY KEY,MaPB VARCHAR(10) REFERENCES PhongBan(MaPB),Ho VARCHAR(50),Ten VARCHAR(30),ChucVu VARCHAR(20),LuongCB INT);\nCREATE TABLE ChamCong (MaNV INT PRIMARY KEY REFERENCES NhanVien(MaNV),NgayCong INT);\nINSERT INTO PhongBan (MaPB, TenPB) VALUES('HC', 'Hành Chánh'),('SX', 'Sản Xuất'),('TV', 'Tài Vụ');\nINSERT INTO NhanVien (MaNV, MaPB, Ho, Ten, ChucVu, LuongCB) VALUES(1, 'HC', 'Nguyễn Thị', 'Hương', 'NV', 15000),(2, 'HC', 'Trần Văn', 'Dũng', 'GD', 45000),(3, 'HC', 'Lê Thanh', 'Thảo', 'PG', 35000),(4, 'TV', 'Phạm Ngọc', 'Hoa', 'TP', 30000),(5, 'TV', 'Võ Tấn', 'Phát', 'NV', 20000),(6, 'SX', 'Lê Thanh', 'Hùng', 'TP', 27000),(7, 'SX', 'Nguyễn Hướng', 'Giang', 'NV', 25000),(8, 'SX', 'Thái', 'Phương', 'NV', 23000),(9, 'HC', 'Nguyễn Hùng', 'Dũng', 'BV', 25000),(10, 'SX', 'Văn Tiến', 'Thành', 'NV', 20000);\n INSERT INTO ChamCong (MaNV, NgayCong) VALUES(1, 26),(2, 30),(3, 29),(4, 22),(6, 28),(5, 24),(7, 22),(8, 24),(9, 26),(10, 30);",
     "answer": "SELECT nv.Ho, nv.Ten, nv.ChucVu, pb.TenPB, nv.LuongCB FROM NhanVien nv JOIN PhongBan pb ON nv.MaPB = pb.MaPB WHERE nv.LuongCB BETWEEN 20000 AND 35000 AND pb.MaPB IN ('TV', 'SX');"
   },
@@ -61,7 +61,7 @@
   },
   {
     "type": "sql",
-    "q": "In danh sách gồm: Ho, ten, NTNS, DienGiaidt. Nhưng chỉ hiển thị những thí sinh thuộc diện: 'Cán bộ, công nhân viên chức Nhà Nước'",
+    "q": "In danh sách gồm: Ho, ten, Noisinh, DienGiaidt. Nhưng chỉ hiển thị những thí sinh thuộc diện: 'Cán bộ, công nhân viên chức Nhà Nước'",
     "setupSql": "CREATE TABLE ChiTietDT (DTDuThi INT PRIMARY KEY, DienGiaiDT VARCHAR(100), DiemChuan INT);\nCREATE TABLE DanhSach (SoBD INT PRIMARY KEY, Ho VARCHAR(50), Ten VARCHAR(20), Phai BOOLEAN, NTNS DATE, NoiSinh VARCHAR(30), DTDuThi INT REFERENCES ChiTietDT(DTDuThi));\nCREATE TABLE DiemThi (SoBD INT PRIMARY KEY REFERENCES DanhSach(SoBD), Toan NUMERIC(3,1), Van NUMERIC(3,1), AnhVan NUMERIC(3,1));\nINSERT INTO ChiTietDT VALUES (1,'Đối tượng thuộc diện chính sách',17),(2,'Cán bộ, công nhân viên chức nhà nước',18),(3,'Học sinh phổ thông',20);\nINSERT INTO DanhSach VALUES (1,'Nguyễn Việt','Hồng',TRUE,'1981-04-04','TP HCM',3),(2,'Nguyễn Hồng','Hạnh',FALSE,'1982-03-15','Bến Tre',1),(3,'Nguyễn Minh','Quang',TRUE,'1982-07-10','TP HCM',3),(4,'Đinh','Tâm',FALSE,'1982-02-18','Tây Ninh',1),(5,'Nguyễn Hoài','Anh',TRUE,'1982-08-21','Vũng Tàu',3),(6,'Đặng Bích','Thủy',FALSE,'1982-10-22','TP HCM',1),(7,'Hoàng Thanh','Trung',FALSE,'1982-08-12','Vĩnh Long',3),(8,'Lâm Ngọc','Quang',TRUE,'1981-08-28','TP HCM',2),(9,'Nguyễn Ngọc','Bích',FALSE,'1981-08-26','Long An',1),(10,'Vương Kim','Anh',FALSE,'1982-04-18','Bến Tre',2);\nINSERT INTO DiemThi VALUES (1,8,5,8),(2,6.5,7,5),(3,7.5,6.5,4),(4,6,9,3.5),(5,6.5,6,8),(6,10,9,9),(7,7,8,8),(8,10,8,9),(9,9,4,7),(10,4,4,4.5);",
     "answer": "SELECT d.Ho, d.Ten, d.NoiSinh, c.DienGiaiDT FROM DanhSach d\nJOIN ChiTietDT c ON d.DTDuThi = c.DTDuThi\nWHERE c.DienGiaiDT = 'Cán bộ, công nhân viên chức nhà nước';"
   },
