@@ -8,6 +8,7 @@
 
   const CDN = 'https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/';
   let loadPromise = null;
+  const collapsedTables = new Set();
 
   function ensureLoaded() {
     if (global.SQL) return Promise.resolve(global.SQL);
@@ -235,15 +236,19 @@
         const r = run(db, 'SELECT * FROM "' + String(t).replace(/"/g, '""') + '"');
         const tbl = renderTable(container, r, '');
         if (tbl) {
+          const key = 'init|' + String(setupSql || '') + '|' + String(t);
+          const isCollapsed = collapsedTables.has(key);
+          if (isCollapsed) tbl.classList.add('sql-collapsed');
           const arrow = document.createElement('span');
           arrow.className = 'sql-toggle-arrow';
-          arrow.textContent = ' ▾';
+          arrow.textContent = isCollapsed ? ' ▸' : ' ▾';
           tLabel.appendChild(arrow);
           tLabel.classList.add('sql-toggle');
           tLabel.style.cursor = 'pointer';
           tLabel.addEventListener('click', function () {
-            const collapsed = tbl.classList.toggle('sql-collapsed');
-            arrow.textContent = collapsed ? ' ▸' : ' ▾';
+            const now = tbl.classList.toggle('sql-collapsed');
+            if (now) collapsedTables.add(key); else collapsedTables.delete(key);
+            arrow.textContent = now ? ' ▸' : ' ▾';
           });
         }
       }
@@ -308,15 +313,19 @@
     container.appendChild(wrap);
 
     if (h) {
+      const key = 'result|' + String(label || '') + '|' + cols.join(',');
+      const isCollapsed = collapsedTables.has(key);
+      if (isCollapsed) table.classList.add('sql-collapsed');
       const arrow = document.createElement('span');
       arrow.className = 'sql-toggle-arrow';
-      arrow.textContent = ' ▾';
+      arrow.textContent = isCollapsed ? ' ▸' : ' ▾';
       h.appendChild(arrow);
       h.classList.add('sql-toggle');
       h.style.cursor = 'pointer';
       h.addEventListener('click', function () {
-        const collapsed = table.classList.toggle('sql-collapsed');
-        arrow.textContent = collapsed ? ' ▸' : ' ▾';
+        const now = table.classList.toggle('sql-collapsed');
+        if (now) collapsedTables.add(key); else collapsedTables.delete(key);
+        arrow.textContent = now ? ' ▸' : ' ▾';
       });
     }
     return table;
