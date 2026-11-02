@@ -1110,6 +1110,18 @@ header p {
   font-style: italic;
 }
 
+.sql-toggle:hover {
+  color: var(--accent);
+}
+
+.sql-toggle-arrow {
+  user-select: none;
+}
+
+.sql-table.sql-collapsed tbody {
+  display: none;
+}
+
 @media (max-width: 480px) {
   body {
     padding: 32px 16px;

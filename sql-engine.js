@@ -233,7 +233,19 @@
         tLabel.textContent = 'Bảng: ' + t;
         container.appendChild(tLabel);
         const r = run(db, 'SELECT * FROM "' + String(t).replace(/"/g, '""') + '"');
-        renderTable(container, r, '');
+        const tbl = renderTable(container, r, '');
+        if (tbl) {
+          const arrow = document.createElement('span');
+          arrow.className = 'sql-toggle-arrow';
+          arrow.textContent = ' ▾';
+          tLabel.appendChild(arrow);
+          tLabel.classList.add('sql-toggle');
+          tLabel.style.cursor = 'pointer';
+          tLabel.addEventListener('click', function () {
+            const collapsed = tbl.classList.toggle('sql-collapsed');
+            arrow.textContent = collapsed ? ' ▸' : ' ▾';
+          });
+        }
       }
     } catch (e) {
       renderTable(container, { error: (e && e.message) ? e.message : String(e) }, 'Lỗi dữ liệu ban đầu:');
@@ -245,8 +257,9 @@
   function renderTable(container, result, label) {
     const wrap = document.createElement('div');
     wrap.className = 'sql-result-block';
+    let h = null;
     if (label) {
-      const h = document.createElement('div');
+      h = document.createElement('div');
       h.className = 'sql-result-label';
       h.textContent = label;
       wrap.appendChild(h);
@@ -257,7 +270,7 @@
       pre.textContent = result.error;
       wrap.appendChild(pre);
       container.appendChild(wrap);
-      return;
+      return null;
     }
     const cols = (result && result.columns) || [];
     const rows = (result && result.values) || [];
@@ -267,7 +280,7 @@
       p.textContent = 'Thực thi thành công (không có kết quả trả về).';
       wrap.appendChild(p);
       container.appendChild(wrap);
-      return;
+      return null;
     }
     const table = document.createElement('table');
     table.className = 'sql-table';
@@ -293,6 +306,20 @@
     table.appendChild(tbody);
     wrap.appendChild(table);
     container.appendChild(wrap);
+
+    if (h) {
+      const arrow = document.createElement('span');
+      arrow.className = 'sql-toggle-arrow';
+      arrow.textContent = ' ▾';
+      h.appendChild(arrow);
+      h.classList.add('sql-toggle');
+      h.style.cursor = 'pointer';
+      h.addEventListener('click', function () {
+        const collapsed = table.classList.toggle('sql-collapsed');
+        arrow.textContent = collapsed ? ' ▸' : ' ▾';
+      });
+    }
+    return table;
   }
 
   const SqlEngine = {
