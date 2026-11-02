@@ -60,14 +60,14 @@
     },
     {
       "id": "004",
-      "title": "Đề mẫu SQL",
-      "short_description": "đề cương ôn tập SQL (SELECT)",
-      "note": "Ví dụ dạng đề SQL chạy trực tiếp trên trình duyệt",
-      "total_questions": 3,
+      "title": "Ôn tập giữa kì I môn Tin học 12(lớp tin) - SQL",
+      "short_description": "đề cương ôn tập",
+      "note": "Có thể chạy lệnh SQL trực tiếp, lệnh đáp án chỉ là mẫu tham khảo, tính đáp án theo kết quả thực khi in ra màn hình",
+      "total_questions": 16,
       "sections": [
         {
           "title": "Phần 1: SQL",
-          "number_of_questions": 3,
+          "number_of_questions": 16,
           "file_path": "exercises/004/section-1.json"
         }
       ]
