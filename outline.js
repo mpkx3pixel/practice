@@ -63,6 +63,7 @@ const Outline = {
     return block;
   },
   renderQuestion(item, index) {
+    if (item && item.type === 'sql') return this.renderSql(item, index);
     if (Array.isArray(item.items)) return this.renderTrueFalse(item, index);
     if (Array.isArray(item.options) && item.options.length > 0) return this.renderMCQ(item, index);
     return this.renderAnswerOnly(item, index);
@@ -119,6 +120,36 @@ const Outline = {
       row.append(badge, text);
       card.appendChild(row);
     }
+
+    return card;
+  },
+
+  renderSql(item, index) {
+    const card = el('article', 'question');
+
+    const q = el('p', 'q-text');
+    q.textContent = `Câu ${index + 1}. ${item.q}`;
+    card.appendChild(q);
+
+    if (item.setupSql) {
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      summary.textContent = 'Xem dữ liệu ban đầu (SQL)';
+      details.appendChild(summary);
+      const pre = document.createElement('pre');
+      pre.className = 'sql-code';
+      pre.textContent = item.setupSql;
+      details.appendChild(pre);
+      card.appendChild(details);
+    }
+
+    const answer = el('div', 'answer-row');
+    const label = el('span', 'answer-label');
+    label.textContent = 'Đáp án (SQL)';
+    const answerText = el('span', 'answer-text');
+    answerText.textContent = item.answer || item.answerSql || '';
+    answer.append(label, answerText);
+    card.appendChild(answer);
 
     return card;
   },

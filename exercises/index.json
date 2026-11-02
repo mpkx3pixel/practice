@@ -1,5 +1,5 @@
 {
-  "total_exercises": 1,
+  "total_exercises": 4,
   "exercises": [
     {
       "id": "001",
@@ -55,6 +55,20 @@
           "title": "Phần 2: Trắc nghiệm đúng sai",
           "number_of_questions": 5,
           "file_path": "exercises/003/section-2.json"
+        }
+      ]
+    },
+    {
+      "id": "004",
+      "title": "Đề mẫu SQL",
+      "short_description": "đề cương ôn tập SQL (SELECT)",
+      "note": "Ví dụ dạng đề SQL chạy trực tiếp trên trình duyệt",
+      "total_questions": 3,
+      "sections": [
+        {
+          "title": "Phần 1: SQL",
+          "number_of_questions": 3,
+          "file_path": "exercises/004/section-1.json"
         }
       ]
     }

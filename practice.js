@@ -81,6 +81,7 @@ const Practice = {
   },
 
   detectType(item, sectionTitle) {
+    if (item && item.type === 'sql') return 'sql';
     if (Array.isArray(item.items)) return 'tf';
     if (Array.isArray(item.options) && item.options.length > 0) return 'mcq';
     if (/tự luận|tu luan/i.test(sectionTitle || '')) return 'essay';
@@ -151,6 +152,7 @@ const Practice = {
     const body = el('div');
     if (q.type === 'mcq') this.renderMCQ(body, q, s.current);
     else if (q.type === 'tf') this.renderTF(body, q, s.current);
+    else if (q.type === 'sql') this.renderSQL(body, q, s.current);
     else if (q.type === 'qa') this.renderQA(body, q, s.current);
     else this.renderEssay(body, q, s.current);
     main.appendChild(body);
@@ -357,6 +359,105 @@ const Practice = {
     if (s.results[i] !== null) return;
     s.answers[i] = { value: ta.value };
     s.results[i] = 'viewed';
+    this.renderMain();
+    this.renderSide();
+  },
+
+  renderSQL(buffer, q, i) {
+    const s = this.state;
+    const graded = s.results[i] !== null;
+    const item = q.item;
+    const ans = s.answers[i] || {};
+
+    const qtext = el('p', 'practice-qtext');
+    qtext.textContent = item.q || '';
+    buffer.appendChild(qtext);
+
+    appendQuestionImage(buffer, item);
+
+    if (!graded) {
+      const form = el('div', 'practice-form');
+      const ta = document.createElement('textarea');
+      ta.className = 'practice-input sql-editor';
+      ta.rows = 6;
+      ta.spellcheck = false;
+      ta.placeholder = 'Nhập lệnh SQL…';
+      ta.value = ans.value || '';
+      ta.addEventListener('input', (e) => {
+        const a = (s.answers[i] ||= { value: '' });
+        a.value = e.target.value;
+      });
+      form.appendChild(ta);
+
+      const btnRow = el('div', 'practice-form');
+      const runBtn = el('button', 'practice-check');
+      runBtn.type = 'button';
+      runBtn.textContent = 'Chạy';
+      const resultBox = document.createElement('div');
+      resultBox.className = 'sql-result';
+      if (ans.runResult) SqlEngine.renderTable(resultBox, ans.runResult, 'Kết quả:');
+
+      runBtn.addEventListener('click', () => this.runSql(i, ta, resultBox));
+      const checkBtn = el('button', 'practice-check');
+      checkBtn.type = 'button';
+      checkBtn.textContent = 'Kiểm tra';
+      checkBtn.addEventListener('click', () => this.checkSql(i, ta));
+      btnRow.append(runBtn, checkBtn);
+      form.append(btnRow, resultBox);
+      buffer.appendChild(form);
+    } else {
+      const ta = document.createElement('textarea');
+      ta.className = 'practice-input sql-editor';
+      ta.rows = 6;
+      ta.value = ans.value || '';
+      ta.disabled = true;
+      buffer.appendChild(ta);
+
+      const resultBox = document.createElement('div');
+      resultBox.className = 'sql-result';
+      const g = ans.gradeResult;
+      if (g) {
+        if (g.userResult) SqlEngine.renderTable(resultBox, g.userResult, 'Bạn chạy:');
+        if (!g.correct && g.answerResult) SqlEngine.renderTable(resultBox, g.answerResult, 'Đáp án mẫu:');
+        if (g.error) SqlEngine.renderTable(resultBox, { error: g.error }, 'Lỗi:');
+      }
+      buffer.appendChild(resultBox);
+
+      this.appendAnswerRow(buffer, item.answer || item.answerSql || '');
+      this.appendFeedback(buffer, i);
+    }
+  },
+
+  async runSql(i, ta, resultBox) {
+    const s = this.state;
+    const item = s.questions[i].item;
+    const sql = ta.value;
+    (s.answers[i] ||= { value: '' }).value = sql;
+    resultBox.innerHTML = '';
+    const setupSql = SqlEngine.getSetupSql(item);
+    let db = null;
+    try {
+      db = await SqlEngine.createDb(setupSql);
+      const res = SqlEngine.run(db, sql);
+      SqlEngine.renderTable(resultBox, res, 'Kết quả:');
+      s.answers[i].runResult = res;
+    } catch (e) {
+      const err = { error: (e && e.message) ? e.message : String(e) };
+      SqlEngine.renderTable(resultBox, err, 'Lỗi:');
+      s.answers[i].runResult = err;
+    } finally {
+      try { if (db) db.close(); } catch (e) {}
+    }
+  },
+
+  async checkSql(i, ta) {
+    const s = this.state;
+    if (s.results[i] !== null) return;
+    const sql = ta.value;
+    (s.answers[i] ||= { value: '' }).value = sql;
+    const res = await SqlEngine.grade(s.questions[i].item, sql);
+    (s.answers[i] ||= {}).gradeResult = res;
+    s.results[i] = res.correct ? 'correct' : 'wrong';
     this.renderMain();
     this.renderSide();
   },

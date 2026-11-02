@@ -1021,6 +1021,86 @@ header p {
   }
 }
 
+/* ===== SQL ===== */
+
+.sql-editor {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.95rem;
+  min-height: 120px;
+}
+
+.sql-code {
+  margin-top: 8px;
+  padding: 10px 12px;
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.sql-result-block {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sql-result-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sql-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sql-table th,
+.sql-table td {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.sql-table th {
+  background: var(--surface-hover);
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.sql-table tr:hover td {
+  background: rgba(122, 162, 247, 0.04);
+}
+
+.sql-error {
+  padding: 10px 12px;
+  border: 1px solid rgba(247, 118, 142, 0.4);
+  background: rgba(247, 118, 142, 0.08);
+  color: var(--incorrect);
+  border-radius: 8px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.sql-empty {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 @media (max-width: 480px) {
   body {
     padding: 32px 16px;

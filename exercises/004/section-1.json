@@ -1,0 +1,20 @@
+[
+  {
+    "type": "sql",
+    "q": "Câu 1. Hiển thị tên và lương của nhân viên phòng 'Kế toán', sắp xếp giảm dần theo lương.",
+    "setupSql": "CREATE TABLE employees (id INTEGER, name TEXT, dept TEXT, salary REAL);\nINSERT INTO employees VALUES (1,'An','Kế toán',10000),(2,'Bình','IT',12000),(3,'Chi','Kế toán',9000),(4,'Dũng','Kế toán',10000);",
+    "answer": "SELECT name, salary FROM employees WHERE dept='Kế toán' ORDER BY salary DESC, name ASC;"
+  },
+  {
+    "type": "sql",
+    "q": "Câu 2. Đếm số nhân viên theo từng phòng ban.",
+    "setupSql": "CREATE TABLE employees (id INTEGER, name TEXT, dept TEXT, salary REAL);\nINSERT INTO employees VALUES (1,'An','Kế toán',10000),(2,'Bình','IT',12000),(3,'Chi','Kế toán',9000);",
+    "answer": "SELECT dept, COUNT(*) AS so_luong FROM employees GROUP BY dept;"
+  },
+  {
+    "type": "sql",
+    "q": "Câu 3. Hiển thị tên nhân viên và tên phòng ban (JOIN hai bảng).",
+    "setupSql": "CREATE TABLE departments (id INTEGER, name TEXT);\nCREATE TABLE employees (id INTEGER, name TEXT, dept_id INTEGER);\nINSERT INTO departments VALUES (1,'Kế toán'),(2,'IT');\nINSERT INTO employees VALUES (1,'An',1),(2,'Bình',2),(3,'Chi',1);",
+    "answer": "SELECT e.name, d.name AS phong_ban FROM employees e JOIN departments d ON e.dept_id = d.id;"
+  }
+]

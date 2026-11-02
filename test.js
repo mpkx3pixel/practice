@@ -100,6 +100,7 @@ const Test = {
 
     if (type === 'mcq') return a.choice !== null && a.choice !== undefined;
     if (type === 'tf') return Array.isArray(a.choices) && a.choices.every((v) => v !== null);
+    if (type === 'sql') return String(a.value ?? '').trim() !== '';
     return String(a.value ?? '').trim() !== '';
   },
 
@@ -165,6 +166,7 @@ const Test = {
     const body = el('div');
     if (q.type === 'mcq') this.renderMCQ(body, i);
     else if (q.type === 'tf') this.renderTF(body, i);
+    else if (q.type === 'sql') this.renderSQL(body, i);
     else this.renderText(body, i, q.type);
     main.appendChild(body);
 
@@ -248,6 +250,61 @@ const Test = {
     });
   },
 
+  renderSQL(buffer, i) {
+    const s = this.state;
+    const q = s.questions[i].item;
+
+    const qtext = el('p', 'practice-qtext');
+    qtext.textContent = q.q;
+    buffer.appendChild(qtext);
+
+    appendQuestionImage(buffer, q);
+
+    const form = el('div', 'practice-form');
+    const field = document.createElement('textarea');
+    field.className = 'practice-input sql-editor';
+    field.rows = 5;
+    field.placeholder = 'Nhập lệnh SQL…';
+    field.value = s.answers[i]?.value ?? '';
+
+    field.addEventListener('input', (e) => {
+      const a = (s.answers[i] ||= { value: '' });
+      const was = this.isAnswered(i);
+      a.value = e.target.value;
+      if (this.isAnswered(i) !== was) {
+        this.renderMain();
+        const nf = document.querySelector('textarea.sql-editor, textarea.practice-input');
+        if (nf) { nf.focus(); nf.selectionStart = nf.selectionEnd = (a.value || '').length; }
+        this.renderSide();
+      }
+    });
+
+    const resultBox = document.createElement('div');
+    resultBox.className = 'sql-result';
+
+    const runBtn = el('button', 'practice-check');
+    runBtn.type = 'button';
+    runBtn.textContent = 'Chạy';
+    runBtn.addEventListener('click', async () => {
+      resultBox.innerHTML = '';
+      const sql = field.value;
+      (s.answers[i] ||= { value: '' }).value = sql;
+      let db = null;
+      try {
+        db = await SqlEngine.createDb(SqlEngine.getSetupSql(q));
+        const res = SqlEngine.run(db, sql);
+        SqlEngine.renderTable(resultBox, res, 'Kết quả:');
+      } catch (e) {
+        SqlEngine.renderTable(resultBox, { error: (e && e.message) ? e.message : String(e) }, 'Lỗi:');
+      } finally {
+        try { if (db) db.close(); } catch (e) {}
+      }
+    });
+
+    form.append(field, runBtn, resultBox);
+    buffer.appendChild(form);
+  },
+
   renderText(buffer, i, type) {
     const s = this.state;
     const q = s.questions[i].item;
@@ -273,7 +330,12 @@ const Test = {
       const a = (s.answers[i] ||= { value: '' });
       const was = this.isAnswered(i);
       a.value = e.target.value;
-      if (this.isAnswered(i) !== was) this.renderSide();
+      if (this.isAnswered(i) !== was) {
+        this.renderMain();
+        const nf = document.querySelector(type === 'essay' ? 'textarea.practice-input' : 'input.practice-input, textarea.practice-input');
+        if (nf) { nf.focus(); nf.selectionStart = nf.selectionEnd = (a.value || '').length; }
+        this.renderSide();
+      }
     });
 
     form.appendChild(field);
@@ -346,10 +408,10 @@ const Test = {
   },
 
 
-  submit() {
+  async submit() {
     const s = this.state;
 
-    s.questions.forEach((q, i) => {
+    await Promise.all(s.questions.map(async (q, i) => {
       if (q.type === 'essay') {
         s.results[i] = null;
         return;
@@ -366,11 +428,15 @@ const Test = {
         s.results[i] = q.item.items.every((it, k) => s.answers[i].choices[k] === it.a)
           ? 'correct'
           : 'wrong';
+      } else if (q.type === 'sql') {
+        const res = await SqlEngine.grade(q.item, s.answers[i].value);
+        (s.answers[i] ||= {}).gradeResult = res;
+        s.results[i] = res.correct ? 'correct' : 'wrong';
       } else {
         s.results[i] =
           String(s.answers[i].value).trim() === String(q.item.a).trim() ? 'correct' : 'wrong';
       }
-    });
+    }));
 
     s.submitted = true;
     this.renderResults();
@@ -517,6 +583,32 @@ const Test = {
         row.appendChild(meta);
         card.appendChild(row);
       });
+      return card;
+    }
+
+    if (q.type === 'sql') {
+      const qt = el('p', 'q-text');
+      qt.textContent = q.item.q;
+      card.appendChild(qt);
+
+      appendQuestionImage(card, q.item);
+
+      const ua = el('p', 'res-user');
+      const userValue = String(s.answers[i]?.value ?? '').trim();
+      ua.textContent = userValue ? `Bạn trả lời: ${s.answers[i].value}` : 'Bạn chưa trả lời.';
+      card.appendChild(ua);
+
+      const resultBox = document.createElement('div');
+      resultBox.className = 'sql-result';
+      const g = s.answers[i]?.gradeResult;
+      if (g) {
+        if (g.userResult) SqlEngine.renderTable(resultBox, g.userResult, 'Bạn chạy:');
+        if (!g.correct && g.answerResult) SqlEngine.renderTable(resultBox, g.answerResult, 'Đáp án mẫu:');
+        if (g.error) SqlEngine.renderTable(resultBox, { error: g.error }, 'Lỗi:');
+      }
+      card.appendChild(resultBox);
+
+      this.appendAnswerRow(card, q.item.answer || q.item.answerSql || '');
       return card;
     }
 
