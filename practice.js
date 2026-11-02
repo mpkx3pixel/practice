@@ -375,6 +375,11 @@ const Practice = {
 
     appendQuestionImage(buffer, item);
 
+    const dataBox = document.createElement('div');
+    dataBox.className = 'sql-result';
+    buffer.appendChild(dataBox);
+    SqlEngine.renderInitialData(dataBox, item.setupSql || item.initSql || item.schema || '');
+
     if (!graded) {
       const form = el('div', 'practice-form');
       const ta = document.createElement('textarea');

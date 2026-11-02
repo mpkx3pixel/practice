@@ -260,6 +260,11 @@ const Test = {
 
     appendQuestionImage(buffer, q);
 
+    const dataBox = document.createElement('div');
+    dataBox.className = 'sql-result';
+    buffer.appendChild(dataBox);
+    SqlEngine.renderInitialData(dataBox, SqlEngine.getSetupSql(q));
+
     const form = el('div', 'practice-form');
     const field = document.createElement('textarea');
     field.className = 'practice-input sql-editor';
@@ -314,6 +319,11 @@ const Test = {
     buffer.appendChild(qtext);
 
     appendQuestionImage(buffer, q);
+
+    const dataBox = document.createElement('div');
+    dataBox.className = 'sql-result';
+    buffer.appendChild(dataBox);
+    SqlEngine.renderInitialData(dataBox, SqlEngine.getSetupSql(q));
 
     const form = el('div', 'practice-form');
     const field = type === 'essay' ? el('textarea', 'practice-input') : el('input', 'practice-input');

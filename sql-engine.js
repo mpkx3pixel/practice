@@ -207,6 +207,41 @@
     }
   }
 
+  async function renderInitialData(container, setupSql) {
+    container.innerHTML = '';
+    const label = document.createElement('div');
+    label.className = 'sql-result-label';
+    label.textContent = 'Dữ liệu ban đầu:';
+    container.appendChild(label);
+    let db = null;
+    try {
+      db = await createDb(setupSql);
+      const tRes = run(db, "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name;");
+      const tables = (tRes.values || []).map(function (r) { return r[0]; });
+      if (tables.length === 0) {
+        const p = document.createElement('p');
+        p.className = 'sql-empty';
+        p.textContent = 'Không có bảng.';
+        container.appendChild(p);
+        return;
+      }
+      for (let i = 0; i < tables.length; i++) {
+        const t = tables[i];
+        const tLabel = document.createElement('div');
+        tLabel.className = 'sql-result-label';
+        tLabel.style.marginTop = '6px';
+        tLabel.textContent = 'Bảng: ' + t;
+        container.appendChild(tLabel);
+        const r = run(db, 'SELECT * FROM "' + String(t).replace(/"/g, '""') + '"');
+        renderTable(container, r, '');
+      }
+    } catch (e) {
+      renderTable(container, { error: (e && e.message) ? e.message : String(e) }, 'Lỗi dữ liệu ban đầu:');
+    } finally {
+      try { if (db) db.close(); } catch (err) {}
+    }
+  }
+
   function renderTable(container, result, label) {
     const wrap = document.createElement('div');
     wrap.className = 'sql-result-block';
@@ -272,6 +307,7 @@
     grade: grade,
     preview: preview,
     renderTable: renderTable,
+    renderInitialData: renderInitialData,
     getSetupSql: getSetupSql,
   };
 

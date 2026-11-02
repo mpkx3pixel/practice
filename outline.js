@@ -131,17 +131,10 @@ const Outline = {
     q.textContent = `Câu ${index + 1}. ${item.q}`;
     card.appendChild(q);
 
-    if (item.setupSql) {
-      const details = document.createElement('details');
-      const summary = document.createElement('summary');
-      summary.textContent = 'Xem dữ liệu ban đầu (SQL)';
-      details.appendChild(summary);
-      const pre = document.createElement('pre');
-      pre.className = 'sql-code';
-      pre.textContent = item.setupSql;
-      details.appendChild(pre);
-      card.appendChild(details);
-    }
+    const dataBox = document.createElement('div');
+    dataBox.className = 'sql-result';
+    card.appendChild(dataBox);
+    SqlEngine.renderInitialData(dataBox, item.setupSql || item.initSql || item.schema || '');
 
     const answer = el('div', 'answer-row');
     const label = el('span', 'answer-label');
