@@ -454,6 +454,15 @@ header p {
   white-space: pre-line;
 }
 
+/* Giữ câu hỏi SQL (và câu hỏi thường) hiển thị khi cuộn qua bảng lớn */
+.practice-main .practice-qtext {
+  position: sticky;
+  top: 12px;
+  z-index: 5;
+  padding: 6px 0;
+  background: var(--bg);
+}
+
 .practice-passage {
   font-size: 1rem;
   font-weight: 500;
