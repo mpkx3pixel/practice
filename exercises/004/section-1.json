@@ -1,20 +1,20 @@
 [
   {
     "type": "sql",
-    "q": "Câu 1. Hiển thị tên và lương của nhân viên phòng 'Kế toán', sắp xếp giảm dần theo lương.",
-    "setupSql": "CREATE TABLE employees (id INTEGER, name TEXT, dept TEXT, salary REAL);\nINSERT INTO employees VALUES (1,'An','Kế toán',10000),(2,'Bình','IT',12000),(3,'Chi','Kế toán',9000),(4,'Dũng','Kế toán',10000);",
-    "answer": "SELECT name, salary FROM employees WHERE dept='Kế toán' ORDER BY salary DESC, name ASC;"
+    "q": "Câu 1. Liệt kê tên học sinh và điểm môn Toán, sắp xếp giảm dần theo điểm.",
+    "setupSql": "CREATE TABLE students (student_id INTEGER, name TEXT, class TEXT);\nCREATE TABLE scores (student_id INTEGER, subject TEXT, score REAL);\nINSERT INTO students VALUES (1,'An','10A'),(2,'Bình','10A'),(3,'Chi','10B'),(4,'Dũng','10B');\nINSERT INTO scores VALUES (1,'Toán',8.5),(1,'Văn',7.0),(2,'Toán',9.0),(3,'Toán',6.5),(4,'Văn',8.0);",
+    "answer": "SELECT s.name, sc.score FROM students s JOIN scores sc ON s.student_id = sc.student_id WHERE sc.subject='Toán' ORDER BY sc.score DESC;"
   },
   {
     "type": "sql",
-    "q": "Câu 2. Đếm số nhân viên theo từng phòng ban.",
-    "setupSql": "CREATE TABLE employees (id INTEGER, name TEXT, dept TEXT, salary REAL);\nINSERT INTO employees VALUES (1,'An','Kế toán',10000),(2,'Bình','IT',12000),(3,'Chi','Kế toán',9000);",
-    "answer": "SELECT dept, COUNT(*) AS so_luong FROM employees GROUP BY dept;"
+    "q": "Câu 2. Đếm số học sinh theo từng lớp.",
+    "setupSql": "CREATE TABLE students (student_id INTEGER, name TEXT, class TEXT);\nINSERT INTO students VALUES (1,'An','10A'),(2,'Bình','10A'),(3,'Chi','10B'),(4,'Dũng','10B');",
+    "answer": "SELECT class, COUNT(*) AS so_hoc_sinh FROM students GROUP BY class;"
   },
   {
     "type": "sql",
-    "q": "Câu 3. Hiển thị tên nhân viên và tên phòng ban (JOIN hai bảng).",
-    "setupSql": "CREATE TABLE departments (id INTEGER, name TEXT);\nCREATE TABLE employees (id INTEGER, name TEXT, dept_id INTEGER);\nINSERT INTO departments VALUES (1,'Kế toán'),(2,'IT');\nINSERT INTO employees VALUES (1,'An',1),(2,'Bình',2),(3,'Chi',1);",
-    "answer": "SELECT e.name, d.name AS phong_ban FROM employees e JOIN departments d ON e.dept_id = d.id;"
+    "q": "Câu 3. Hiển thị tên học sinh và điểm của những học sinh có điểm Toán từ 8 trở lên.",
+    "setupSql": "CREATE TABLE students (student_id INTEGER, name TEXT, class TEXT);\nCREATE TABLE scores (student_id INTEGER, subject TEXT, score REAL);\nINSERT INTO students VALUES (1,'An','10A'),(2,'Bình','10A'),(3,'Chi','10B'),(4,'Dũng','10B');\nINSERT INTO scores VALUES (1,'Toán',8.5),(2,'Toán',9.0),(3,'Toán',6.5);",
+    "answer": "SELECT s.name, sc.score FROM students s JOIN scores sc ON s.student_id = sc.student_id WHERE sc.subject='Toán' AND sc.score >= 8;"
   }
 ]
