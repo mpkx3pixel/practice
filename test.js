@@ -170,7 +170,7 @@ const Test = {
     else this.renderText(body, i, q.type);
     main.appendChild(body);
 
-    const submit = el('button', 'practice-check');
+    const submit = el('button', 'practice-check submit-btn');
     submit.type = 'button';
     submit.textContent = 'Nộp bài — kiểm tra kết quả';
     submit.disabled = this.answeredCount() === 0;
@@ -277,9 +277,12 @@ const Test = {
       const was = this.isAnswered(i);
       a.value = e.target.value;
       if (this.isAnswered(i) !== was) {
-        this.renderMain();
-        const nf = document.querySelector('textarea.sql-editor, textarea.practice-input');
-        if (nf) { nf.focus(); nf.selectionStart = nf.selectionEnd = (a.value || '').length; }
+        const cnt = document.querySelector('.practice-count');
+        if (cnt) cnt.textContent = `${this.answeredCount()} / ${s.questions.length}`;
+        const badge = document.querySelector('.p-badge.answered');
+        if (badge) badge.textContent = `Đã làm: ${this.answeredCount()}`;
+        const submitBtn = document.querySelector('.submit-btn');
+        if (submitBtn) submitBtn.disabled = this.answeredCount() === 0;
         this.renderSide();
       }
     });
@@ -341,9 +344,12 @@ const Test = {
       const was = this.isAnswered(i);
       a.value = e.target.value;
       if (this.isAnswered(i) !== was) {
-        this.renderMain();
-        const nf = document.querySelector(type === 'essay' ? 'textarea.practice-input' : 'input.practice-input, textarea.practice-input');
-        if (nf) { nf.focus(); nf.selectionStart = nf.selectionEnd = (a.value || '').length; }
+        const cnt = document.querySelector('.practice-count');
+        if (cnt) cnt.textContent = `${this.answeredCount()} / ${s.questions.length}`;
+        const badge = document.querySelector('.p-badge.answered');
+        if (badge) badge.textContent = `Đã làm: ${this.answeredCount()}`;
+        const submitBtn = document.querySelector('.submit-btn');
+        if (submitBtn) submitBtn.disabled = this.answeredCount() === 0;
         this.renderSide();
       }
     });
