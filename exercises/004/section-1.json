@@ -1,9 +1,9 @@
 [
   {
     "type": "sql",
-    "q": "Câu 1. Liệt kê tên học sinh và điểm môn Toán, sắp xếp giảm dần theo điểm.",
-    "setupSql": "CREATE TABLE students (student_id INTEGER, name TEXT, class TEXT);\nCREATE TABLE scores (student_id INTEGER, subject TEXT, score REAL);\nINSERT INTO students VALUES (1,'An','10A'),(2,'Bình','10A'),(3,'Chi','10B'),(4,'Dũng','10B');\nINSERT INTO scores VALUES (1,'Toán',8.5),(1,'Văn',7.0),(2,'Toán',9.0),(3,'Toán',6.5),(4,'Văn',8.0);",
-    "answer": "SELECT s.name, sc.score FROM students s JOIN scores sc ON s.student_id = sc.student_id WHERE sc.subject='Toán' ORDER BY sc.score DESC;"
+    "q": "Câu 1. In danh sách gồm: Ho, ten, Chucvu, TenPB, LuongCB",
+    "setupSql": "CREATE TABLE PhongBan (MaPB VARCHAR(10) PRIMARY KEY,TenPB VARCHAR(50) NOT NULL );\nCREATE TABLE NhanVien (MaNV INT PRIMARY KEY,MaPB VARCHAR(10) REFERENCES PhongBan(MaPB),Ho VARCHAR(50),Ten VARCHAR(30),ChucVu VARCHAR(20),LuongCB INT);\nCREATE TABLE ChamCong (MaNV INT PRIMARY KEY REFERENCES NhanVien(MaNV),NgayCong INT);\nINSERT INTO PhongBan (MaPB, TenPB) VALUES('HC', 'Hành Chánh'),('SX', 'Sản Xuất'),('TV', 'Tài Vụ');\nINSERT INTO NhanVien (MaNV, MaPB, Ho, Ten, ChucVu, LuongCB) VALUES(1, 'HC', 'Nguyễn Thị', 'Hương', 'NV', 15000),(2, 'HC', 'Trần Văn', 'Dũng', 'GD', 45000),(3, 'HC', 'Lê Thanh', 'Thảo', 'PG', 35000),(4, 'TV', 'Phạm Ngọc', 'Hoa', 'TP', 30000),(5, 'TV', 'Võ Tấn', 'Phát', 'NV', 20000),(6, 'SX', 'Lê Thanh', 'Hùng', 'TP', 27000),(7, 'SX', 'Nguyễn Hướng', 'Giang', 'NV', 25000),(8, 'SX', 'Thái', 'Phương', 'NV', 23000),(9, 'HC', 'Nguyễn Hùng', 'Dũng', 'BV', 25000),(10, 'SX', 'Văn Tiến', 'Thành', 'NV', 20000);\n INSERT INTO ChamCong (MaNV, NgayCong) VALUES(1, 26),(2, 30),(3, 29),(4, 22),(6, 28),(5, 24),(7, 22),(8, 24),(9, 26),(10, 30);",
+    "answer": "SELECT Ho, Ten, ChucVu, TenPB, LuongCB FROM NhanVien nv JOIN PhongBan pb ON nv.MaPB = pb.MaPB;"
   },
   {
     "type": "sql",

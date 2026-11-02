@@ -144,6 +144,42 @@ const Outline = {
     answer.append(label, answerText);
     card.appendChild(answer);
 
+    const tryBox = document.createElement('div');
+    tryBox.className = 'sql-result';
+    const tryLabel = document.createElement('div');
+    tryLabel.className = 'sql-result-label';
+    tryLabel.textContent = 'Chạy thử:';
+    tryBox.appendChild(tryLabel);
+
+    const ta = document.createElement('textarea');
+    ta.className = 'practice-input sql-editor';
+    ta.rows = 4;
+    ta.spellcheck = false;
+    ta.value = item.answer || item.answerSql || '';
+    tryBox.appendChild(ta);
+
+    const btn = el('button', 'practice-check');
+    btn.type = 'button';
+    btn.textContent = 'Chạy';
+    const resBox = document.createElement('div');
+    resBox.className = 'sql-result';
+    btn.addEventListener('click', async () => {
+      resBox.innerHTML = '';
+      let db = null;
+      try {
+        db = await SqlEngine.createDb(SqlEngine.getSetupSql(item));
+        const r = SqlEngine.run(db, ta.value);
+        SqlEngine.renderTable(resBox, r, 'Kết quả:');
+      } catch (e) {
+        SqlEngine.renderTable(resBox, { error: (e && e.message) ? e.message : String(e) }, 'Lỗi:');
+      } finally {
+        try { if (db) db.close(); } catch (err) {}
+      }
+    });
+    tryBox.appendChild(btn);
+    tryBox.appendChild(resBox);
+    card.appendChild(tryBox);
+
     return card;
   },
 
