@@ -17,11 +17,15 @@ const Test = {
       sections.forEach(({ section, list }, sectionIndex) => {
         const shuffled = shuffle([...list]);
         shuffled.forEach((item) => {
+          let qItem = item;
+          if (Array.isArray(item.options) && item.options.length > 0) {
+            qItem = Object.assign({}, item, { options: shuffle([...item.options]) });
+          }
           questions.push({
-            type: Practice.detectType(item, section.title),
+            type: Practice.detectType(qItem, section.title),
             sectionTitle: section.title || '',
             sectionIndex,
-            item,
+            item: qItem,
           });
         });
       });
