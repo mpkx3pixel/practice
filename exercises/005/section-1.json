@@ -1,0 +1,357 @@
+[
+  {
+    "q": "Nội dung trên trang HTML bao gồm phần văn bản (text) và các kí tự đánh dấu đặc biệt nằm trong cặp dấu?",
+    "options": [
+      "\"(\", \")\"",
+      "\"{\", \"}\"",
+      "\"<\", \">\"",
+      "\"\\\", \"\\\""
+    ],
+    "a": "\"<\", \">\""
+  },
+  {
+    "q": "Đoạn mã HTML dùng để tạo liên kết tới trang web https://www.google.com/ là",
+    "options": [
+      "<a domain=\"https://www.google.com/\">Google</a>",
+      "<a link=\"https://www.google.com/\">Google</a>",
+      "<a href=\"https://www.google.com/\">Google</a>",
+      "<a url=\"https://www.google.com/\">Google</a>"
+    ],
+    "a": "<a href=\"https://www.google.com/\">Google</a>"
+  },
+  {
+    "q": "Phát biểu nào sau đây mô tả đúng về mạng WAN?",
+    "options": [
+      "Là một dạng đặc biệt của Internet.",
+      "Tên viết tắt đầy đủ là Wireless Area Network, nghĩa là mạng diện rộng.",
+      "Tên viết tắt của Wide Area Network, nghĩa là mạng diện rộng.",
+      "Là mạng kết nối trong một phạm vi một trường học hoặc chung cư."
+    ],
+    "a": "Tên viết tắt của Wide Area Network, nghĩa là mạng diện rộng."
+  },
+  {
+    "q": "Em sử dụng thẻ nào để chèn dòng kẻ ngang vào trang HTML?",
+    "options": ["<br/>", "<hr/>", "<dr/>", "<qr/>"],
+    "a": "<hr/>"
+  },
+  {
+    "q": "Để định dạng màu nền cho bảng, em sử dụng thuộc tính nào?",
+    "options": ["background", "bgcolor", "color", "tablecolor"],
+    "a": "bgcolor"
+  },
+  {
+    "q": "Điểm truy cập không dây (Wireless Access Point - WAP) dùng để làm gì?",
+    "options": [
+      "Chuyển tiếp dữ liệu qua mạng viễn thông",
+      "Kết nối trực tiếp vào LAN",
+      "Kết nối tất cả các thiết bị đầu cuối trong một khu vực mà không cần cáp mạng",
+      "Kết nối các máy tính qua Internet"
+    ],
+    "a": "Kết nối tất cả các thiết bị đầu cuối trong một khu vực mà không cần cáp mạng"
+  },
+  {
+    "q": "Để gộp ô trên cột, em sử dụng thuộc tính nào?",
+    "options": ["colframe", "rowspan", "colspan", "rowsize"],
+    "a": "colspan"
+  },
+  {
+    "q": "Router được sử dụng để làm gì?",
+    "options": [
+      "Kết nối hai máy tính thuộc hai LAN khác nhau qua Internet",
+      "Gửi tín hiệu đến tất cả các cổng",
+      "Thiết lập kênh truyền giữa hai cổng kết nối",
+      "Kết nối trực tiếp vào LAN"
+    ],
+    "a": "Kết nối hai máy tính thuộc hai LAN khác nhau qua Internet"
+  },
+  {
+    "q": "Giao thức mạng là gì?",
+    "options": [
+      "Là một hệ thống tự động hóa",
+      "Là một phương tiện truyền thông tin trực tiếp",
+      "Là một quy tắc dùng để kết nối máy tính với Internet",
+      "Là một quy tắc dùng để trao đổi thông tin giữa các thiết bị mạng"
+    ],
+    "a": "Là một quy tắc dùng để trao đổi thông tin giữa các thiết bị mạng"
+  },
+  {
+    "q": "Để giảm cỡ chữ, em sử dụng thẻ nào trong HTML?",
+    "options": ["<sup>", "<small>", "<downsize>", "<figure>"],
+    "a": "<small>"
+  },
+  {
+    "q": "Switch hoạt động khác với Hub như thế nào?",
+    "options": [
+      "Kết nối mạng không dây",
+      "Xác định cổng kết nối của thiết bị nhận và gửi dữ liệu trực tiếp",
+      "Gửi dữ liệu đến tất cả các cổng",
+      "Kết nối Internet"
+    ],
+    "a": "Xác định cổng kết nối của thiết bị nhận và gửi dữ liệu trực tiếp"
+  },
+  {
+    "q": "Thiết bị mạng nào dưới đây gửi dữ liệu đến tất cả các cổng khác khi nhận dữ liệu từ một cổng?",
+    "options": ["Switch", "Router", "Hub", "Access Point"],
+    "a": "Hub"
+  },
+  {
+    "q": "Các thiết bị nào sau đây được sử dụng để kết nối mạng?",
+    "options": [
+      "Bàn phím và chuột",
+      "Màn hình và loa",
+      "Máy in và Scanner",
+      "Hub và Switch"
+    ],
+    "a": "Hub và Switch"
+  },
+  {
+    "q": "Cáp mạng thường được sử dụng để kết nối thiết bị nào?",
+    "options": [
+      "Router và modem",
+      "Máy tính và printer",
+      "Máy tính và switch/hub",
+      "Tất cả các phương án trên"
+    ],
+    "a": "Tất cả các phương án trên"
+  },
+  {
+    "q": "Khi tạo danh sách, thuộc tính type được dùng để làm gì?",
+    "options": [
+      "Xác định kiểu kí tự đầu dòng.",
+      "Xác định kiểu danh sách.",
+      "Xác định giá trị bắt đầu đánh số, nhận giá trị là các số nguyên.",
+      "Xác định kiểu đánh số, các kiểu đánh số là \"1\", \"A\", \"a\", \"I\" và \"i\"."
+    ],
+    "a": "Xác định kiểu đánh số, các kiểu đánh số là \"1\", \"A\", \"a\", \"I\" và \"i\"."
+  },
+  {
+    "q": "Thẻ HTML nào dùng để hiển thị ảnh trong trang web?",
+    "options": ["<image>", "<img>", "<photo>", "<pic>"],
+    "a": "<img>"
+  },
+  {
+    "q": "Phần mở rộng của trang HTML là",
+    "options": ["hml", "htm", "hltm", "htl"],
+    "a": "htm"
+  },
+  {
+    "q": "Để phần mềm Notepad++ hiển thị và hỗ trợ soạn thảo HTML em cần thực hiện lệnh gì?",
+    "options": [
+      "Language → Syntax → HTML",
+      "View → Syntax → HTML",
+      "Language → H → HTML",
+      "View → H → HTML"
+    ],
+    "a": "Language → H → HTML"
+  },
+  {
+    "q": "HTML5 không hỗ trợ thẻ nào sau đây?",
+    "options": ["<del>", "<strong>", "<u>", "<em>"],
+    "a": "<u>"
+  },
+  {
+    "q": "Thuộc tính nào của thẻ <a> dùng để chỉ định nơi mở tài liệu được liên kết (VD: mở tài liệu trong một tab mới, mở tài liệu trong khung hiện tại,...)?",
+    "options": ["target", "open", "type", "rel"],
+    "a": "target"
+  },
+  {
+    "q": "Cổng LAN trên Router dùng để kết nối với gì?",
+    "options": [
+      "LAN",
+      "Các router khác",
+      "Cổng WAN",
+      "Internet"
+    ],
+    "a": "LAN"
+  },
+  {
+    "q": "Cáp mạng được sử dụng trong trường hợp nào?",
+    "options": [
+      "Kết nối hub với switch trong mạng không dây.",
+      "Kết nối router với Internet qua vệ tinh.",
+      "Kết nối mạng không dây.",
+      "Kết nối các thiết bị trong mạng LAN có dây."
+    ],
+    "a": "Kết nối các thiết bị trong mạng LAN có dây."
+  },
+  {
+    "q": "Thẻ nào trong HTML được dùng để tạo liên kết?",
+    "options": [
+      "<i>",
+      "<l>",
+      "<b>",
+      "<a>"
+    ],
+    "a": "<a>"
+  },
+  {
+    "q": "Khi muốn thực hiện nhiều định dạng phông đồng thời, em ngăn cách các cặp tên:giá trị trong phần giá trị của thuộc tính bằng dấu gì?",
+    "options": [
+      "Dấu \",\"",
+      "Dấu \";\"",
+      "Dấu cách",
+      "Dấu \".\""
+    ],
+    "a": "Dấu \";\""
+  },
+  {
+    "q": "Điểm truy cập không dây (WAP) dùng để làm gì?",
+    "options": [
+      "Để kết nối tất cả các thiết bị đầu cuối không dây trong một khu vực",
+      "Để tăng tốc độ Internet",
+      "Để lưu trữ dữ liệu trực tuyến",
+      "Để bảo vệ mạng khỏi virus"
+    ],
+    "a": "Để kết nối tất cả các thiết bị đầu cuối không dây trong một khu vực"
+  },
+  {
+    "q": "Hub thường được sử dụng trong môi trường nào?",
+    "options": [
+      "LAN có vài chục đến hàng trăm máy tính",
+      "Kết nối máy tính qua Internet",
+      "Mạng có ít thiết bị đầu cuối như mạng gia đình",
+      "Mạng viễn thông"
+    ],
+    "a": "Mạng có ít thiết bị đầu cuối như mạng gia đình"
+  },
+  {
+    "q": "Khi định dạng tạo khung bảng, thuộc tính nhỏ độ dày của thuộc tính con border trong thuộc tính style được đặt theo",
+    "options": [
+      "px",
+      "mm",
+      "pt",
+      "%"
+    ],
+    "a": "px"
+  },
+  {
+    "q": "Thẻ HTML dùng để tạo các ô dữ liệu trong bảng là",
+    "options": [
+      "<table>",
+      "<tr>",
+      "<td>",
+      "color"
+    ],
+    "a": "<td>"
+  },
+  {
+    "q": "Em cần viết đoạn mã HTML như thế nào để tạo đường liên kết từ hình ảnh tháp Eiffel được lưu trong tệp có đường dẫn images/eiffel.jpg tới trang info.html?",
+    "options": [
+      "<a href=\"info.html\" src=\"images/eiffel.jpg\"></a>",
+      "<a href=\"info.html\"><img src=\"images/eiffel.jpg\"></a>",
+      "<img src=\"images/eiffel.jpg\"><a href=\"info.html\"></a>",
+      "<a src=\"info.html\"><img href=\"images/eiffel.jpg\"></a>"
+    ],
+    "a": "<a href=\"info.html\"><img src=\"images/eiffel.jpg\"></a>"
+  },
+  {
+    "q": "Trong trường hợp trang web liên kết tới thuộc thư mục khác và ở mức trên, ta sử dụng các kí tự nào khi viết đường dẫn?",
+    "options": [
+      "\"..\"",
+      "\"../\"",
+      "\"/..\"",
+      "\"./\""
+    ],
+    "a": "\"../\""
+  },
+  {
+    "q": "Khi nào bạn cần sử dụng router?",
+    "options": [
+      "Khi kết nối máy tính với máy in trong mạng LAN",
+      "Khi kết nối máy tính với hub",
+      "Khi kết nối hai LAN với nhau qua Internet",
+      "Khi sử dụng Wi-Fi trong mạng LAN"
+    ],
+    "a": "Khi kết nối hai LAN với nhau qua Internet"
+  },
+  {
+    "q": "Wi-Fi thường được hiểu như là gì?",
+    "options": [
+      "Hub",
+      "Bộ định tuyến",
+      "Bộ thu phát không dây trong mạng cục bộ",
+      "Cáp mạng không dây"
+    ],
+    "a": "Bộ thu phát không dây trong mạng cục bộ"
+  },
+  {
+    "q": "Router sử dụng trong trường hợp nào?",
+    "options": [
+      "Kết nối hai LAN khác nhau qua Internet",
+      "Kết nối máy tính với máy in",
+      "Kết nối máy tính với màn hình",
+      "Lưu trữ dữ liệu"
+    ],
+    "a": "Kết nối hai LAN khác nhau qua Internet"
+  },
+  {
+    "q": "HTML là gì?",
+    "options": [
+      "Ngôn ngữ trình bày siêu văn bản.",
+      "Ngôn ngữ đánh dấu siêu văn bản.",
+      "Ngôn ngữ lập trình siêu văn bản.",
+      "Ngôn ngữ thiết kế siêu văn bản."
+    ],
+    "a": "Ngôn ngữ đánh dấu siêu văn bản."
+  },
+  {
+    "q": "Thiết bị nào sau đây được sử dụng để kết nối tất cả các thiết bị đầu cuối trong một khu vực mà không cần hub, switch hay cáp mạng?",
+    "options": [
+      "Hub",
+      "Bộ thu phát Wi-Fi",
+      "Router",
+      "Switch"
+    ],
+    "a": "Bộ thu phát Wi-Fi"
+  },
+  {
+    "q": "Phần mềm tương tự Notepad trên hệ điều hành MacOS là",
+    "options": [
+      "TextEdit",
+      "Notepad++",
+      "Sublime Text",
+      "HyperText"
+    ],
+    "a": "TextEdit"
+  },
+  {
+    "q": "Thẻ nào trong HTML được sử dụng để định nghĩa từ viết tắt hoặc tóm tắt một đoạn nội dung nào đó?",
+    "options": [
+      "<wbr>",
+      "<bdo>",
+      "<svgt>",
+      "<abbr>"
+    ],
+    "a": "<abbr>"
+  },
+  {
+    "q": "Trong HTML5, thẻ nào dùng để đánh dấu xoá (bằng nét gạch giữa chữ)?",
+    "options": [
+      "<del>",
+      "<u>",
+      "<remove>",
+      "<cut>"
+    ],
+    "a": "<del>"
+  },
+  {
+    "q": "Giao thức TCP/IP có vai trò gì trong mạng máy tính?",
+    "options": [
+      "Điều khiển việc truyền dữ liệu trên Internet",
+      "Lưu trữ dữ liệu trên đám mây",
+      "Kết nối máy tính với các thiết bị ngoại vi",
+      "Quản lý dữ liệu trong mạng nội bộ"
+    ],
+    "a": "Điều khiển việc truyền dữ liệu trên Internet"
+  },
+  {
+    "q": "Khi tạo liên kết tới một vị trí cụ thể trong cùng trang web, em cần tạo phần tử HTML có thuộc tính gì tại vị trí được liên kết đến?",
+    "options": [
+      "Thuộc tính class",
+      "Thuộc tính id",
+      "Thuộc tính target",
+      "Thuộc tính src"
+    ],
+    "a": "Thuộc tính id"
+  }
+]

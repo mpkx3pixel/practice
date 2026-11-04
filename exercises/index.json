@@ -1,5 +1,5 @@
 {
-  "total_exercises": 4,
+  "total_exercises": 5,
   "exercises": [
     {
       "id": "001",
@@ -69,6 +69,19 @@
           "title": "Phần 1: SQL",
           "number_of_questions": 16,
           "file_path": "exercises/004/section-1.json"
+        }
+      ]
+    },
+    {
+      "id": "005",
+      "title": "Ôn tập giữa kì I môn Tin học 12(lớp toán)",
+      "short_description": "đề cương ôn tập",
+      "total_questions": 40,
+      "sections": [
+        {
+          "title": "Phần 1: Trắc nghiệm nhiều lựa chọn",
+          "number_of_questions": 40,
+          "file_path": "exercises/005/section-1.json"
         }
       ]
     }
