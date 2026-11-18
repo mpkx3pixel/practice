@@ -84,6 +84,24 @@
           "file_path": "exercises/005/section-1.json"
         }
       ]
+    },
+    {
+      "id": "006",
+      "title": "BÀI 4. HTML VÀ CẤU TRÚC TRANG WEB(lớp tin)",
+      "short_description": "đề cương ôn tập",
+      "total_questions": 30,
+      "sections": [
+        {
+          "title": "Phần 1: Trắc nghiệm nhiều lựa chọn",
+          "number_of_questions": 20,
+          "file_path": "exercises/006/section-1.json"
+        },
+        {
+          "title  ": "Phần 2: Trắc nghiệm đúng sai",
+          "number_of_questions": 10,
+          "file_path": "exercises/006/section-2.json"
+        }
+      ]
     }
   ]
 }

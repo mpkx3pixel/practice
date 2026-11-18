@@ -1,0 +1,212 @@
+[
+  {
+    "title": "Câu 1: Sau khi kết thúc bài học \"HTML VÀ CẤU TRÚC TRANG WEB\", giáo viên muốn củng cố kiến thức phần \"TRANG WEB VÀ HTML\" đã đưa ra một số câu hỏi:\n1. HTML là gì?\n2. Thẻ đánh dấu HTML là gì?\n3. Trang web là gì? Phần mềm dùng để hiển thị nội dung trang web gọi là gì?\n4. Phần tử HTML là gì? Ví dụ về 2 phần tử HTML lồng nhau.\nSau đây là trả lời của 4 học sinh tương ứng 4 câu hỏi trên. Hãy nhận xét các câu trả lời là đúng hay sai.",
+    "items": [
+      {
+        "t": "a) HTML là viết tắt của cụm từ Hypertext Markup Language (Ngôn ngữ đánh dấu siêu văn bản), là một bộ quy tắc dùng để thiết lập cấu trúc và hiển thị nội dung trang web.",
+        "a": true
+      },
+      {
+        "t": "b) Thẻ đánh dấu HTML (tag) là các thành phần chính tạo thành ngôn ngữ HTML, mỗi loại thẻ có ý nghĩa nhất định, dùng điều khiển hoặc định dạng nội dung trang web.",
+        "a": true
+      },
+      {
+        "t": "c) Trang web là tệp văn bản được soạn thảo theo các quy tắc của ngôn ngữ HTML, phần mở rộng là .html hoặc .htm, còn gọi là trang HTML. Phần mềm dùng để hiển thị trang web gọi là trình duyệt.",
+        "a": true
+      },
+      {
+        "t": "d) Phần tử HTML đóng vai trò quan trọng trong việc xây dựng cấu trúc và nội dung trang web, thường gồm thẻ mở, thẻ đóng và nội dung của nó, các phần tử HTML có thể rời nhau hoặc lồng nhau. Ví dụ về hai phần tử lồng nhau: <div> <p> </div> </p>",
+        "a": false
+      }
+    ]
+  },
+  {
+    "title": "Câu 2: Sau khi kết thúc bài học \"HTML VÀ CẤU TRÚC TRANG WEB\", giáo viên đã yêu cầu các học sinh phát biểu về \"CẤU TRÚC CƠ BẢN CỦA MỘT TỆP HTML\". Hãy nhận xét các phát biểu sau đây là đúng hay sai:",
+    "items": [
+      {
+        "t": "a) Mỗi tệp HTML bao gồm nhiều phần tử HTML, các phần tử HTML có thể lồng nhau tạo thành quan hệ cha - con.",
+        "a": true
+      },
+      {
+        "t": "b) Dòng đầu tiên, <!DOCTYPE html> được coi là phần tử html đặc biệt.",
+        "a": false
+      },
+      {
+        "t": "c) Phần tử <head> chứa \"siêu dữ liệu\" (metadata) là những thông tin không hiển thị trực tiếp trên trang web, mà dùng để mô tả tài liệu HTML, giúp trình duyệt hiểu và xử lý trang tốt hơn, gồm các thẻ <title>, <meta>, <style>, <script>, ...",
+        "a": true
+      },
+      {
+        "t": "d) Để tạo \"đoạn văn\" cần hiển thị, ta ghi <p> \"đoạn văn\" </p> và đặt trong phần tử <body>.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 3: Sau khi học xong bài \"HTML VÀ CẤU TRÚC TRANG WEB\", An muốn tìm cho mình một phần mềm để làm quen và thực hành các bài tập về tạo trang web HTML. Hãy giúp An nhận ra các gợi ý đúng hay sai từ các bạn và tìm cho mình một trình soạn thảo HTML phù hợp:",
+    "items": [
+      {
+        "t": "a) Notepad của Microsoft windows giúp soạn thảo tệp HTML nhanh chóng",
+        "a": false
+      },
+      {
+        "t": "b) Notepad++ là phần mềm miễn phí duy nhất giúp soạn thảo tệp HTML nhanh vì có định dạng màu các thẻ HTML tự động.",
+        "a": false
+      },
+      {
+        "t": "c) Trang web w3school.com giúp soạn thảo tệp HTML nhanh chóng vì có định dạng màu các thẻ và cung cấp sẵn một cấu trúc cơ bản của tệp HTML.",
+        "a": true
+      },
+      {
+        "t": "d) Để thực hiện tốt phần thực hành về HTML, nên tìm các phần mềm có chức năng tự định dạng, tự thụt lề để thể hiện được cấu trúc tệp HTML, rèn luyện tính nghiêm túc của người học, giúp cú pháp rõ ràng, dễ hiểu, và rèn luyện thói quen lập trình tốt.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 4: Mỗi tệp HTML bao gồm nhiều phần tử HTML, các phần tử HTML có thể lồng nhau:",
+    "items": [
+      {
+        "t": "a. Phần tử <meta> nằm trong phần tử <body> và được dùng để mô tả các thông tin bổ sung của trang web như cách mã hóa Unicode, từ khóa dùng để tìm kiếm trang, tên tác giả và trang web.",
+        "a": false
+      },
+      {
+        "t": "b. Trong sơ đồ hình cây HTML, phần tử <html> là phần tử gốc (root).",
+        "a": true
+      },
+      {
+        "t": "c. Nhóm các thẻ định dạng văn bản thường dùng là các thẻ tiêu đề theo thứ tự tăng cấp dần của cỡ chữ là <h1>, <h2>, <h3>, <h4>, <h5>, <h6>.",
+        "a": false
+      },
+      {
+        "t": "d. Phần tử <title> nằm trong phần tử <head> và được dùng để mô tả tên của trang web.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 5: Cho tệp HTML có nội dung như dưới đây.\n<!DOCTYPE html>\n<html>\n<head>\n <title>Trang web thử nghiệm</title>\n</head>\n<body>\n <h1>Hello</h1>\n <p><i>Chào mừng bạn ghé thăm trang web!</i></p>\n</body>\n</html>\nSau đây là các nhận định về tệp HTML trên.",
+    "items": [
+      {
+        "t": "a) Phần tử <html> chứa phần tử <head> và <body>.",
+        "a": true
+      },
+      {
+        "t": "b) Phần tử <body> chứa một phần tử con.",
+        "a": false
+      },
+      {
+        "t": "c) Tiêu đề trang web hiển thị trên trình duyệt là Hello.",
+        "a": false
+      },
+      {
+        "t": "d) Chỉ có một phần tử có thuộc tính.",
+        "a": false
+      }
+    ]
+  },
+  {
+    "title": "Câu 6: Các thẻ <h1>, <h2>, <h3>, <h4>, <h5>, <h6> dùng để định dạng tiêu đề cho các mục của văn bản. Khi không khai báo thêm các thuộc tính, các thẻ định dạng này có đặc điểm:",
+    "items": [
+      {
+        "t": "a) Tiêu đề được định dạng bởi thẻ <h1> có cỡ chữ nhỏ nhất.",
+        "a": false
+      },
+      {
+        "t": "b) Các tiêu đề có cùng phông chữ.",
+        "a": true
+      },
+      {
+        "t": "c) Tiêu đề được định dạng bởi thẻ <h3> có cỡ chữ nhỏ hơn <h2> và lớn hơn <h4>.",
+        "a": true
+      },
+      {
+        "t": "d) Các tiêu đề đều được định dạng cùng căn lề.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 7: Trong giờ học HTML, bạn An đang giới thiệu về cấu trúc trang web cho nhóm bạn. An nói: “Mình hiểu rằng mỗi tệp HTML gồm nhiều phần tử có thể lồng nhau, và phần tử <html> là gốc. Các thẻ tiêu đề từ <h1> đến <h6> theo thứ tự tăng dần về cấp độ quan trọng. Còn thẻ <meta> và <title> đều nằm trong <body> để mô tả thông tin trang.”",
+    "items": [
+      {
+        "t": "a. Phần tử <meta> nằm trong phần tử <body> và được dùng để mô tả các thông tin bổ sung của trang web như cách mã hóa Unicode, từ khóa dùng để tìm kiếm trang, tên tác giả trang web.",
+        "a": false
+      },
+      {
+        "t": "b. Trong sơ đồ hình cây HTML, phần tử <html> là phần tử gốc (root).",
+        "a": true
+      },
+      {
+        "t": "c. Nhóm các thẻ định dạng văn bản thường dùng là các thẻ tiêu đề theo thứ tự tăng cấp dần là <h1>, <h2>, <h3>, <h4>, <h5>, <h6>.",
+        "a": false
+      },
+      {
+        "t": "d. Phần tử <title> nằm trong phần tử <head> và được dùng để mô tả tên của trang web.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 8: Bạn Mai đang học về thuộc tính HTML. Mai chia sẻ với nhóm: “Mình hiểu rằng thuộc tính giúp bổ sung thông tin cho thẻ. Mỗi thẻ đều phải có ít nhất một thuộc tính, và thuộc tính có thể đặt trong cả thẻ đóng. Khi có nhiều thuộc tính thì chúng được ngăn cách bằng dấu cách.”\nCác bạn nghe xong đưa ra nhận xét về những hiểu biết của Mai:",
+    "items": [
+      {
+        "t": "a. Mỗi thẻ HTML đều phải có thuộc tính.",
+        "a": false
+      },
+      {
+        "t": "b. Cú pháp để xác định thuộc tính: tên_thuộc_tính=\"giá trị\".",
+        "a": true
+      },
+      {
+        "t": "c. Thuộc tính có thể nằm trong thẻ kết thúc.",
+        "a": false
+      },
+      {
+        "t": "d. Trong trường hợp thẻ có nhiều hơn một thuộc tính thì các thuộc tính được ngăn cách bởi dấu cách.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 9: Sau khi quan sát tệp HTML sau:\n<! DOCTYPE html>\n<html>\n<head>\n<meta charset= “utf-8” >\n<title> tên trang web </title>\n</head>\n<body>\n<div>\n<h1> Trang web và HTML </h1>\n<p> Đây là dòng đầu tiên</p>\n<hr>\n<p> Đây là dòng cuối cùng</p>\n</div>\n<p> Trang này được lập bởi <em> nhóm bạn bè </em> </p>\n</body>\n<html>\nCác bạn trong lớp có nhận xét như sau:",
+    "items": [
+      {
+        "t": "a. Phần tử <html> là bắt buộc, là phần tử gốc và chứa tất cả các phần tử HTML còn lại trong trang web. Phần tử <html> thường chứa hai phần tử con <head> và <body>.",
+        "a": true
+      },
+      {
+        "t": "b. Dòng đầu tiên <! DOCTYPE html> được gọi là phần tử HTML và mang ý nghĩa đặc biệt, thông báo cho trình duyệt biết đây là tệp có định dạng HTML. Có thể xem là dòng khai báo html của tệp văn bản.",
+        "a": false
+      },
+      {
+        "t": "c. Phần tử <meta> được dùng để mô tả các thông tin bổ sung của trang web như cách mã hóa Unicode, từ khóa dùng để tìm kiếm trang, tên tác giả trang web. Phần từ này nằm ngoài phần tử <head>.",
+        "a": false
+      },
+      {
+        "t": "d. Phần tử <title> nằm trong phần tử <head>. Thẻ <title> mô tả tên của trang web hiện thời. Tên của trang web sẽ xuất hiện trong danh sách kết quả tìm kiếm. Phần tử <title> phải là văn bản thường và không được phép chứa các phần tử con.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "title": "Câu 10: Giáo viên yêu cầu học sinh sử dụng các thẻ HTML để tạo ra một trang web giới thiệu ngắn gọn về ngôi trường mà mình đang học. Bạn học sinh A đã thực hiện yêu cầu của giáo viên như sau:\n<! DOCTYPE html>\n<html>\n<title> Trường THPT chuyên Bến Tre </title>\n<meta charset= “UTF-8” >\n</head>\n<body>\n<h1> Giới thiệu về trường </h1>\n</body>\n<p> Trường <b> THPT chuyên Bến Tre </b> có địa chỉ tại <i> Phường Phú Tân</i>. </p>\n<html>\nGiáo viên yêu cầu cả lớp đọc chương trình trên. Sau khi đọc, một số bạn đã đưa ra các phát biểu sau đây:",
+    "items": [
+      {
+        "t": "a. Thiếu thẻ đóng của thẻ meta.",
+        "a": false
+      },
+      {
+        "t": "b. Trang web có tiêu đề là “Giới thiệu về trường”.",
+        "a": false
+      },
+      {
+        "t": "c. Cần đổi chỗ thẻ title và meta thì mới hiển thị được trang web.",
+        "a": false
+      },
+      {
+        "t": "d. Theo cấu trúc trang web thẻ <p> được tạo ra trong trang web trên đặt sai vị trí.",
+        "a": true
+      }
+    ]
+  }
+]

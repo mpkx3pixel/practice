@@ -1,0 +1,162 @@
+[
+  {
+    "q": "Phần mở rộng của trang web được tạo bằng ngôn ngữ HTML là?",
+    "options": [".hmt", ".htmt", ".hmtl", ".html"],
+    "a": ".html"
+  },
+  {
+    "q": "Mỗi trang web được tạo thành từ",
+    "options": [
+      "Nhiều phần tử HTML gộp lại",
+      "Nhiều thẻ HTML gộp lại",
+      "Các thẻ đôi gộp lại",
+      "Các thẻ đơn gộp lại"
+    ],
+    "a": "Nhiều phần tử HTML gộp lại"
+  },
+  {
+    "q": "Phát biểu nào sau đây là đúng về phần tử HTML",
+    "options": [
+      "Phần tử HTML bao gồm cả thẻ và nội dung văn bản chịu tác động của thẻ",
+      "Phần tử HTML là các thẻ đôi",
+      "Phần tử HTML bao gồm các thẻ đôi và thẻ đơn trong mã nguồn HTML",
+      "Phần tử HTML là các thẻ đơn"
+    ],
+    "a": "Phần tử HTML bao gồm cả thẻ và nội dung văn bản chịu tác động của thẻ"
+  },
+  {
+    "q": "Trong HTML, các phần tử HTML có thể lồng nhau tạo thành mối quan hệ?",
+    "options": ["Cha - con", "Mẹ - con", "Anh - em", "Quan hệ lồng nhau"],
+    "a": "Cha - con"
+  },
+  {
+    "q": "Trong HTML, phần tử nào sau đây là phần tử gốc?",
+    "options": ["<html>", "<head>", "<body>", "<title>"],
+    "a": "<html>"
+  },
+  {
+    "q": "Định nghĩa nào sau đây là đúng về ngôn ngữ HTML?",
+    "options": [
+      "HTML là ngôn ngữ đánh dấu siêu văn bản",
+      "HTML là ngôn ngữ đánh dấu trang web",
+      "HTML là phần mềm đánh dấu trang web",
+      "HTML là phần mềm đánh dấu siêu văn bản"
+    ],
+    "a": "HTML là ngôn ngữ đánh dấu siêu văn bản"
+  },
+  {
+    "q": "Phương án nào sau đây là tên của một phần mềm soạn thảo HTML?",
+    "options": [
+      "Mozilla Firefox.",
+      "w3schools.com.",
+      "Spotify.",
+      "Sublime Text."
+    ],
+    "a": "Sublime Text."
+  },
+  {
+    "q": "Trong HTML, tên trang web được đặt trong thẻ nào sau đây?",
+    "options": ["<title>.", "<body>.", "<p>.", "<meta>."],
+    "a": "<title>."
+  },
+  {
+    "q": "Trong HTML, thẻ có cú pháp </ tên thẻ> được gọi là thẻ?",
+    "options": ["Thẻ kết thúc", "Thẻ bắt đầu", "Thẻ đơn", "Thẻ đôi"],
+    "a": "Thẻ kết thúc"
+  },
+  {
+    "q": "Phương án nào sau đây là tên của một trình duyệt hiển thị HTML?",
+    "options": [
+      "Mozilla Firefox.",
+      "w3schools.com.",
+      "Spotify.",
+      "Sublime Text."
+    ],
+    "a": "Mozilla Firefox."
+  },
+  {
+    "q": "Cú pháp nào sau đây là đúng cho thẻ Doctype?",
+    "options": [
+      "<!DOCTYPE/html>",
+      "<!DOCTYPE html>",
+      "<!DOCTYPE-html>",
+      "<DOCTYPE html>"
+    ],
+    "a": "<!DOCTYPE html>"
+  },
+  {
+    "q": "Thẻ nào sau đây có thể xuất hiện nhiều hơn một lần trong một trang web?",
+    "options": ["<html>", "<body>", "<p>", "<head>"],
+    "a": "<p>"
+  },
+  {
+    "q": "Cây thông tin các phần tử HTML của trang web có dạng?",
+    "options": [
+      "Cây nhị phân",
+      "Cây tam phân",
+      "Cây tìm kiếm nhị phân",
+      "Cây bất kì"
+    ],
+    "a": "Cây bất kì"
+  },
+  {
+    "q": "Câu nào sau đây là sai?",
+    "options": [
+      "Không thể đặt thẻ <p> bên trong thẻ <head> được vì thẻ <p> bắt buộc nằm trong thẻ <body>",
+      "Có thể đặt thẻ <p> bên trong thẻ <head> vì HTML không hạn chế",
+      "Có thể đặt thẻ <p> bên ngoài thẻ <head> chỉ trong một số trường hợp đặc biệt",
+      "Có thể đặt thẻ <p> bên trong thẻ <head> nhưng không nên áp dụng."
+    ],
+    "a": "Không thể đặt thẻ <p> bên trong thẻ <head> được vì thẻ <p> bắt buộc nằm trong thẻ <body>"
+  },
+  {
+    "q": "Thành phần nào sau đây bắt buộc phải có trong cấu trúc của một trang web?",
+    "options": ["title", "body", "html", "head"],
+    "a": "html"
+  },
+  {
+    "q": "Để tạo một đường kẻ ngang trên trang web, đoạn mã HTML nào sau đây là đúng?",
+    "options": ["<hr>", "<br>", "<line>", "<hr> </hr>"],
+    "a": "<hr>"
+  },
+  {
+    "q": "Đoạn mã HTML nào sau đây tạo đoạn văn “Welcome to my website!” với chữ website được gạch chân?",
+    "options": [
+      "<p>Welcome to my <i>website</i>!</p>",
+      "<p>Welcome to my <b>website</b>!</p>",
+      "<p>Welcome to my <u>website</u>!</p>",
+      "<p>Welcome to my <em>website</em>!</p>"
+    ],
+    "a": "<p>Welcome to my <u>website</u>!</p>"
+  },
+  {
+    "q": "Trong HTML, muốn đặt tiêu đề hiển thị trên thanh tiêu đề của trình duyệt, ta viết như thế nào?",
+    "options": [
+      "<title> Tiêu đề trang web </title> đặt bên trong thẻ <head>",
+      "<h1> Tiêu đề trang web </h1> đặt bên trong thẻ",
+      "<header> Tiêu đề trang web </header> đặt bên trong thẻ <head>",
+      "<meta title=\"Tiêu đề trang web\"> đặt bên trong thẻ <head>"
+    ],
+    "a": "<title> Tiêu đề trang web </title> đặt bên trong thẻ <head>"
+  },
+  {
+    "q": "Trong cấu trúc cây HTML, phần tử <head> chứa thẻ <meta> để khai báo mã hóa UTF-8 và thẻ <title> để đặt tiêu đề trang “Học HTML”. Đâu là đoạn mã đúng thể hiện cấu trúc này?",
+    "options": [
+      "<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Học HTML</title>\n</head>\n</html>",
+      "<html>\n<head>\n<meta encoding=\"UTF-8\">\n<title>Học HTML</title>\n</head>\n</html>",
+      "<html>\n<head>\n<title>Học HTML</title>\n<meta =\"UTF-8\">\n</head>\n</html>",
+      "<html>\n<head>\n<meta charset=\"UTF-8\">\n<h1>Học HTML</h1>\n</head>\n</html>"
+    ],
+    "a": "<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Học HTML</title>\n</head>\n</html>"
+  },
+  {
+    "q": "Bạn An viết đoạn mã HTML như sau\n<html>\n<p>\n Xin chào\n HTML\n thế giới!\n</p>\n</html>\nTheo bạn, nội dung hiển thị trên trình duyệt máy tính bạn An sẽ như thế nào?",
+    "options": [
+      "Xin chào HTML thế giới! (trên một dòng)",
+      "Xin chào HTML thế giới! (trên ba dòng)",
+      "Xin chàoHTMLthế giới! (không có khoảng trắng)",
+      "Xin chào HTML thế giới! (hiển thị danh sách)"
+    ],
+    "a": "Xin chào HTML thế giới! (trên một dòng)"
+  }
+]
